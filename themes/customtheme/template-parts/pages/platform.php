@@ -34,7 +34,7 @@
     </div>
 
     <div class="trial-account--container">
-      <div style="width: 40%;">
+      <div class="text-section">
         <h1 class="text-light-blue mb-1">Coba Demo Akun</h1>
         <p>Kenali teknologi trading kami dengan dana virtual, tanpa harus deposit. Daftar demo akun gratis, tanpa risiko.</p>
       </div>

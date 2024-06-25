@@ -6,7 +6,10 @@
         <p class='hero-paragraph'>Bantuan layanan tersebar di 21 cabang seluruh Indonesia</p>
       </div>
       <div class='hero--content'>
-        <img src="" alt="hero-homepage">
+        <div class="hero-banner-container">
+          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/06/hero-homepage.jpg" alt="hero-homepage"> -->
+          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/06/hero-homepage-scaled.jpg" alt="hero-homepage">
+        </div>
       </div>
     </div>
   </div>
@@ -59,7 +62,9 @@
       <!-- <hr class='divider'> -->
 
       <div class="cta-demo--container">
-        <button>BUKA AKUN LIVE</button>
+        <a href="https://cabinet.vifx.co.id/cabinet/login">
+          <button>BUKA AKUN LIVE</button>
+        </a>
         <p>Belum memiliki pengalaman trading? <span class="text-light-blue">Buat akun demo sekarang</span></p>
       </div>
 
@@ -465,7 +470,9 @@
                   </div>
             <?php }
           } else { ?>
-            <span>No Data...</span>
+            <div style="display: flex; justify-content: center; width: 100%;">
+              <span>No Data...</span>
+            </div>
           <?php 
           } 
         ?>

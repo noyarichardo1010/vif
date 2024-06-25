@@ -4,7 +4,7 @@
     <p class='content-subtitle text-white'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. Kami berkomitmen memberikan pengalaman perdagangan yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p>
   </div>
 
-  <div class='container about-us--container'>
+  <div class='container about-us--container mt -xl'>
     <div class='vision-mission--container'>
       <h3 class='content-title center'>Keunggulan Kami</h3>
 
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class='trusted-account--container'>
+    <div class='trusted-account--container mt -xl'>
       <h3 class='content-title center'>Keamanan Rekening Terpisah</h3>
 
       <div class='trusted-account-card--container'>
@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <div class='our-legality--container'>
+    <div class='our-legality--container mt -xl'>
       <h3 class='content-title center'>Legalitas Kami</h3>
 
       <div class='our-legality-content--container'>
