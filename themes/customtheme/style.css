@@ -1544,41 +1544,6 @@ nav {
 
 /*  ====== END EDUCATION PAGE ======  */
 
-/*  ====== START ANALISA PAGE ======  */
-
-#analyze-page {
-  padding: 8rem 0;
-}
-
-.analyze-page-hero {
-  background: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1415&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  width: 100%;
-  min-height: 438px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.analyze-page-widget {
-  background-color: white;
-  border-radius: 10px;
-  
-  select {
-    border-radius: 10px;
-    outline: none;
-    border-radius: 1px solid transparent;
-    overflow: hidden;
-    padding: 0.5rem 1.5rem;
-  }
-}
-
-/*  ====== END ANALISA PAGE ======  */
 
 /* ===== START PAGE CONTACT ===== */
 #contact-us {
@@ -1704,6 +1669,188 @@ nav {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 /* ===== END PAGE CONTACT ===== */
+
+
+/* ===== START PAGE ANALYZE ===== */
+
+
+#analyze-page {
+  padding: 8rem 0;
+}
+
+.analyze-page-hero {
+  background: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1415&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  min-height: 438px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.analyze-page-widget {
+  background-color: white;
+  border-radius: 10px;
+  
+  select {
+    border-radius: 10px;
+    outline: none;
+    border-radius: 1px solid transparent;
+    overflow: hidden;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.analyze-page {
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  .post-section {
+    width: 60%;
+    padding: 1rem 1.5rem;
+  }
+  
+  .post-list-section {
+    width: 40%;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.tabs--container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+
+  margin-bottom: 2rem;
+
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-bottom: 1rem;
+
+    cursor: pointer;
+    font-size: 1.3em;
+
+    &.active {
+      font-weight: 600;
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+.analyze-card--container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.analyze-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+
+  .img-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    .title {
+      font-size: 1.5em;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--light-blue-custom);
+      }
+    }
+
+    .content {
+      font-size: 1.2em;
+      font-weight: 400;
+      margin-top: 1.5rem;
+    }
+
+    .date {
+      font-size: 0.8em;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.5);
+      margin-top: 1rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+.last-post--container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 1rem 0 0;
+  padding: 0;
+  
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.9em;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--light-blue-custom);
+    }
+
+    .title {
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ===== END PAGE ANALYZE ===== */
 
 #footer {
   background-color: var(--primary-dark);
