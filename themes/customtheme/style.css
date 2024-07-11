@@ -1135,33 +1135,54 @@ nav {
   margin-top: 3rem;
   width: 100%;
 
-  div {
-    flex-shrink: 0;
-    max-width: 250px; /* untuk mobile */
-    /* max-width: 400px; */
-    border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  &::-webkit-scrollbar {
+    height: 8px;
   }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--light-blue-custom);
+    border-radius: 8px;
+  }
+
 }
 
 .product-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
 
-  .title {
-    font-size: 1.3em;
-    font-weight: 600;
+  flex-shrink: 0;
+  max-width: 250px; /* untuk mobile */
+  /* max-width: 400px; */
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .title {
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+  
+    .subtitle {
+      margin: 0;
+      padding: 0;
+      max-width: 75%;
+      font-size: 0.9em;
+    }
   }
 
-  .subtitle {
-    margin: 0;
-    padding: 0;
-    max-width: 75%;
-    font-size: 0.9em;
-  }
 
   button {
     margin: 2rem 0;
@@ -1169,8 +1190,8 @@ nav {
     background-color: var(--light-blue-custom);
     color: white;
 
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 400;
     
     border: none;
     border-radius: 6px;
@@ -1219,7 +1240,9 @@ nav {
   
   border-radius: 12px;
   padding: 1rem;
-  background-color: var(--third-grey);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
   .account-benefits--container {
     display: flex;
@@ -1251,7 +1274,7 @@ nav {
   button {
     padding: 0.5rem 1.5rem;
     color: white;
-    background-color: var(--orange-custom);
+    background-color: var(--light-blue-custom);
     font-weight: 400;
     font-size: 1em;
     border: none;
@@ -1259,6 +1282,8 @@ nav {
 
     align-self: center;
     margin: 1rem 0;
+
+    cursor: pointer;
   }
 }
 
@@ -1743,12 +1768,14 @@ nav {
   margin-top: 2rem;
 
   .post-section {
-    width: 60%;
+    /* width: 60%; */
+    width: 100%;
     padding: 1rem 1.5rem;
   }
   
   .post-list-section {
     width: 40%;
+    display: none;
     padding: 1rem 1.5rem;
   }
 }
@@ -1779,7 +1806,7 @@ nav {
 
 .analyze-card--container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -1788,7 +1815,9 @@ nav {
   flex-direction: column;
   background-color: white;
   border-radius: 12px;
+  overflow: hidden;
   /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
 
   .img-section {
@@ -1810,17 +1839,21 @@ nav {
     padding: 1rem 2rem;
 
     .title {
-      font-size: 1.5em;
+      font-size: 1.1em;
       font-weight: 600;
       cursor: pointer;
 
       &:hover {
         color: var(--light-blue-custom);
       }
+
+      &.mt-xs {
+        margin-top: 0.5rem;
+      }
     }
 
     .content {
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: 400;
       margin-top: 1.5rem;
     }
@@ -2675,6 +2708,79 @@ nav {
   .vision-mission--container {
     margin-top: 4rem;
     text-align: start;
+  }
+
+  .branch--container {
+    padding: 2rem 0;
+    margin: 3rem 0;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .branch-card--container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto 0;
+  }
+
+  .branch-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 3.5rem;
+
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    .title {
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+
+    .years {
+      font-size: 0.9em;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    .branch-head-foto {
+      width: 90px;
+      height: 90px;
+
+      border-radius: 9999px;
+      border: 2px solid transparent;
+
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    button {
+      outline: none;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      background-color: transparent;
+
+      padding: 0.2rem 1.5rem;
+
+      background-color: var(--light-blue-custom);
+      color: white;
+      font-weight: 600;
+      font-size: 0.8em;
+
+      cursor: pointer;
+    }
   }
 
   .vision-mission-card--container {

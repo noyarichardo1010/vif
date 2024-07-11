@@ -2,18 +2,13 @@
   <div class="analyze-page-hero">
     <h1 class="content-title">Analisa pada VIFX</h1>
     <p class="content-subtitle">Portal seputar analisa teknikal dari analis VIFX yang membantumu menemukan peluang saat trading.</p>
-    <!-- <div class="analyze-page-widget">
-      <select name="analyze-option" id="">
-        <option value="1">Analisa Fundamental</option>
-        <option value="2" >Analisa Teknikal</option>
-      </select>
-    </div> -->
   </div>
   <div class="container analyze-page">
      <div class="post-section">
       <div class="tabs--container">
         <button class="active">Fundamental</button>
         <button>Teknikal</button>
+        <button>News / Post</button>
       </div>
       <div class="analyze-card--container">
         <div class="analyze-card">
@@ -22,7 +17,11 @@
           </div>
 
           <div class="content-section">
-            <h1 class="title">Daily Market Suggestion XAUUSD - 27 Juni 2024</h1>
+            <h1 class="title">Daily Market Suggestion</h1>
+
+            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
+
+            <span></span>
 
             <span class="content">
               Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
@@ -43,7 +42,9 @@
           </div>
 
           <div class="content-section">
-            <h1 class="title">Daily Market Suggestion XAUUSD - 27 Juni 2024</h1>
+            <h1 class="title">Daily Market Suggestion</h1>
+
+            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
 
             <span class="content">
               Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
@@ -64,7 +65,9 @@
           </div>
 
           <div class="content-section">
-            <h1 class="title">Daily Market Suggestion XAUUSD - 27 Juni 2024</h1>
+            <h1 class="title">Daily Market Suggestion</h1>
+
+            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
 
             <span class="content">
               Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
@@ -85,7 +88,9 @@
           </div>
 
           <div class="content-section">
-            <h1 class="title">Daily Market Suggestion XAUUSD - 27 Juni 2024</h1>
+            <h1 class="title">Daily Market Suggestion</h1>
+            
+            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
 
             <span class="content">
               Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
@@ -106,7 +111,9 @@
           </div>
 
           <div class="content-section">
-            <h1 class="title">Daily Market Suggestion XAUUSD - 27 Juni 2024</h1>
+            <h1 class="title">Daily Market Suggestion</h1>
+
+            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
 
             <span class="content">
               Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
@@ -127,7 +134,9 @@
           </div>
 
           <div class="content-section">
-            <h1 class="title">Daily Market Suggestion XAUUSD - 27 Juni 2024</h1>
+            <h1 class="title">Daily Market Suggestion</h1>
+
+            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
 
             <span class="content">
               Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC

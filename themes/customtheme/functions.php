@@ -23,6 +23,8 @@ function vifx_theme_register_elementor_locations( $elementor_theme_manager ) {
 }
 add_action('elementor/theme/register_locations', 'vifx_theme_register_elementor_locations');
 
+/** new code for new theme base (below) */
+
 // function your_theme_setup() {
 //     // Tambahkan dukungan untuk title tag
 //     add_theme_support( 'title-tag' );

@@ -35,6 +35,67 @@
       </div>
     </div>
 
+    <div class="branch--container">
+      <h1 class="text-center">Cabang - Cabang VIFX</h1>
+
+      <div class="branch-card--container">
+        <div class="branch-card">
+          <h2 class="title">Cabang 1</h2>
+          <span class="years">Est: 2005</span>
+          
+          <div class="branch-head-foto">
+            <img src="https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-1.jpg" alt="photo head branch">
+          </div>
+
+          <button>Info</button>
+        </div>
+
+        <div class="branch-card">
+          <h2 class="title">Cabang 2</h2>
+          <span class="years">Est: 2002</span>
+          
+          <div class="branch-head-foto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4mBCv8oTvterkWf7_D62F_WI2FBtvBf0Jg&s" alt="photo head branch">
+          </div>
+
+          <button>Info</button>
+        </div>
+
+        <div class="branch-card">
+          <h2 class="title">Cabang 3</h2>
+          <span class="years">Est: 2013</span>
+          
+          <div class="branch-head-foto">
+            <img src="https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-3-1.jpg" alt="photo head branch">
+          </div>
+
+          <button>Info</button>
+        </div>
+
+        <div class="branch-card">
+          <h2 class="title">Cabang 4</h2>
+          <span class="years">Est: 2015</span>
+          
+          <div class="branch-head-foto">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/07/full/1691412942-1081.jpg?im=FitAndFill=(826,465)" alt="photo head branch">
+          </div>
+
+          <button>Info</button>
+        </div>
+
+        <div class="branch-card">
+          <h2 class="title">Cabang 5</h2>
+          <span class="years">Est: 2019</span>
+          
+          <div class="branch-head-foto">
+            <img src="https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg" alt="photo head branch">
+          </div>
+
+          <button>Info</button>
+        </div>
+      </div>
+    </div>
+
     <div class='trusted-account--container mt -xl'>
       <h3 class='content-title center'>Keamanan Rekening Terpisah</h3>
 
