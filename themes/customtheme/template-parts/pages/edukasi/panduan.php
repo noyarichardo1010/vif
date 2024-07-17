@@ -1,8 +1,8 @@
 <div id="trading-guide">
   <div class='trading-guide-hero'>
     <div class="container">
-      <h1 class='content-title'>Panduan</h1>
-      <p class='content-subtitle max-width-xl mt-sm'>Memberikan langkah-langkah dasar untuk memulai trading di platform kami. Anda akan mempelajari cara membuka akun, melakukan deposit, dan withdrawal.</p>
+      <h1 class='content-title text-white'>Panduan</h1>
+      <p class='content-subtitle max-width-xl mt-sm text-white'>Memberikan langkah-langkah dasar untuk memulai trading di platform kami. Anda akan mempelajari cara membuka akun, melakukan deposit, dan withdrawal.</p>
     </div>
   </div>
 

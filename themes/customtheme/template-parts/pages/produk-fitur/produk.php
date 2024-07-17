@@ -1,4 +1,5 @@
 <div id="product">
+  <div class="product-banner"></div>
   <div class="container product-page">
 
     <div class="product-list--container">

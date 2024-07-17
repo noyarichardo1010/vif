@@ -1,7 +1,9 @@
 <div id="page-platform">
   <div class="page-platform--hero">
-    <h1 class="content-title text-white">Sistem Trading yang Powerful</h1>
-    <p class="content-subtitle text-white">Aplikasi trading terpopuler dengan lebih dari 38 indikator analisa, instant klik, dan dukungan algoritma trading yang bisa membantu memaksimalkan profit</p>
+    <div class="content-text--container">
+      <h1 class="content-title text-white">Sistem Trading yang Powerful</h1>
+      <p class="content-subtitle text-white">Aplikasi trading terpopuler dengan lebih dari 38 indikator analisa, instant klik, dan dukungan algoritma trading yang bisa membantu memaksimalkan profit</p>
+    </div>
 
     <div class="button-download-list--container">
       <button type="button" class="button-download-platform">Google Play</button>

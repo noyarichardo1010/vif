@@ -1,10 +1,10 @@
-<nav id='navbar' class='navbar'>
+<nav id='navbar' class='navbar on-top'>
   <div id='navbar-container'>
       <div class="navbar-brand">
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
               <!-- <?php bloginfo( 'name' ); ?> -->
-              <img src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' alt='company icon'/>
-              <!-- <img src='http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png' alt='company icon'/> -->
+
+              <img id="navbar-logo-img" src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' alt='company icon'/>
           </a>
       </div>
 

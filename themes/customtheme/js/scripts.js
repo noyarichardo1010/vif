@@ -1,24 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var navbar = document.querySelector('.navbar');
-  var scrollPosition = window.scrollY;
+    var navbar = document.querySelector('.navbar');
+    var scrollPosition = window.scrollY;
 
-  function addScrolledClass() {
-      navbar.classList.add('scrolled');
-  }
+    const navbarLogo = document.getElementById('navbar-logo-img');
 
-  function removeScrolledClass() {
-      navbar.classList.remove('scrolled');
-  }
+    const srcWhiteLogo = 'http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png'
+    const srcBlackLogo = 'http://localhost/vifx/wp-content/uploads/2024/07/logo-black.png'
 
-  function handleScroll() {
-      scrollPosition = window.scrollY;
+    function addScrolledClass() {
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('on-top');
 
-      if (scrollPosition > 50) {
-          addScrolledClass();
-      } else {
-          removeScrolledClass();
-      }
-  }
+        navbarLogo.src = srcBlackLogo;
+    }
+    
+    function removeScrolledClass() {
+        navbar.classList.remove('scrolled');
+        navbar.classList.add('on-top');
 
-  window.addEventListener('scroll', handleScroll);
+        navbarLogo.src = srcWhiteLogo;
+    }
+
+    function handleScroll() {
+        scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+            addScrolledClass();
+        } else {
+            removeScrolledClass();
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
 });

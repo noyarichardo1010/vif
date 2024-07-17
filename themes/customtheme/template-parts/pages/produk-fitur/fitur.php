@@ -1,4 +1,5 @@
 <div id="feature">
+  <div class="product-banner"></div>
   <div class="container feature-page">
     <div class="feature-benefits--container">
       <h1 class="title text-light-blue">Banyak Manfaat Trading di VIFX</h1>

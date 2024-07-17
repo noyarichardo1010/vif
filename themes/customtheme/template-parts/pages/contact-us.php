@@ -1,7 +1,7 @@
 <div id="contact-us">
   <div class='contact-hero'>
-    <h1 class='content-title text-black'>VIF Siap Menjawab Kebutuhan Anda Saat Trading</h1>
-    <p class='content-subtitle text-black'>Kami siap menjawab pertanyaan Anda seputar akun, trading, atau masalah teknis 24/7. Anda bisa menghubungi kami melalui pesan, telepon, atau email.</p>
+    <h1 class='content-title text-white text-center'>VIF Siap Menjawab Kebutuhan Anda Saat Trading</h1>
+    <p class='content-subtitle text-white text-center'>Kami siap menjawab pertanyaan Anda seputar akun, trading, atau masalah teknis 24/7. Anda bisa menghubungi kami melalui pesan, telepon, atau email.</p>
   </div>
 
   <div class="container contact--container">
@@ -45,13 +45,49 @@
         </div>
       </div>
 
-      <div class="half-section">
+      <div class="half-section hidden">
         <?php get_template_part('template-parts/components/form'); ?>
       </div>
     </div>
 
+    <div class="location-text--container">
+      <h1 class="content-title">Our Location</h1>
+    </div>
+
     <div class="maps--container">
-      <h3>Maps Container</h3>
+      <!-- <h3>Maps Container</h3> -->
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+
+      <div class="branch-list--container">
+        <h1>Branch List</h1>
+
+        <div class="branch-content--container">
+          <div class="branch-content">
+            <span>Branch 1</span>
+          </div>
+          <div class="branch-content">
+            <span>Branch 2</span>
+          </div>
+
+          <div class="branch-content">
+            <span>Branch 3</span>
+          </div>
+          <div class="branch-content">
+            <span>Branch 4</span>
+          </div>
+
+          <div class="branch-content">
+            <span>Branch 6</span>
+          </div>
+          <div class="branch-content">
+            <span>Branch 7</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

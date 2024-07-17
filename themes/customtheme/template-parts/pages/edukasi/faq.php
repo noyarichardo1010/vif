@@ -1,7 +1,7 @@
 <div id="faq">
   <div class='faq-hero'>
-    <h1 class='content-title'>Tanya Jawab Soal VIFX</h1>
-    <p class='content-subtitle'>Hal-hal yang perlu kamu ketahui saat trading di VIFX.</p>
+    <h1 class='content-title text-white'>Tanya Jawab Soal VIFX</h1>
+    <p class='content-subtitle text-white'>Hal-hal yang perlu kamu ketahui saat trading di VIFX.</p>
   </div>
   <div class="container accordion-wrapper">
     <!-- ini page FAQ -->
