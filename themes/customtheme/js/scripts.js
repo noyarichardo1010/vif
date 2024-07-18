@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const navbarLogo = document.getElementById('navbar-logo-img');
 
-    const srcWhiteLogo = 'http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png'
-    const srcBlackLogo = 'http://localhost/vifx/wp-content/uploads/2024/07/logo-black.png'
+    // const srcWhiteLogo = 'http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png'
+    // const srcBlackLogo = 'http://localhost/vifx/wp-content/uploads/2024/07/logo-black.png'
+    const srcWhiteLogo = 'http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png'
+    const srcBlackLogo = 'http://wpdev.vifx.co.id/wp-content/uploads/2024/07/logo-black.png'
 
     function addScrolledClass() {
         navbar.classList.add('scrolled');
