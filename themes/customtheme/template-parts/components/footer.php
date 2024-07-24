@@ -12,19 +12,23 @@
 
       <div class="footer-account--section">
         <span class="footer-account--item">
-          <img src="https://i0.wp.com/vectorez.biz.id/wp-content/uploads/2023/10/Logo-Bank-Central-Asia-BCA.png?resize=2657%2C834&ssl=1" alt="bca">
+          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/07/bca-white.png" alt="bca" /> -->
+          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/bca-white.png" alt="bca" />
         </span>
 
         <span class="footer-account--item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/CIMB_Niaga_logo.svg/1200px-CIMB_Niaga_logo.svg.png" alt="cimb">
+          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/07/cimb-white.png" alt="cimb" /> -->
+          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/cimb-white.png" alt="cimb" />
         </span>
 
         <span class="footer-account--item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/2560px-Bank_Mandiri_logo_2016.svg.png" alt="mandiri">
+          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/07/mandiri-white.png" alt="mandiri" /> -->
+          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/mandiri-white.png" alt="mandiri" />
         </span>
 
         <span class="footer-account--item">
-          <img src="https://1.bp.blogspot.com/-QyZzjGcf8Yo/TcJNc4MVUeI/AAAAAAAADjI/3nqoarlG9wU/s1600/Bank_Sinarmas.png" alt="sinarmas">
+          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/07/sinarmas-white.png" alt="sinarmas" /> -->
+          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/sinarmas-white.png" alt="sinarmas" />
         </span>
       </div>
     </div>

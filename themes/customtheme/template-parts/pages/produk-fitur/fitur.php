@@ -28,12 +28,18 @@
 
     <div class="support-office--container">
       <div class="image-section">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="support-office">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="support-office" />
       </div>
 
       <div class="text-section">
         <h1 class="title text-light-blue mb-1">Support dari Kantor Cabang di Indonesia</h1>
-        <p>Kami selalu dekat dengan Anda karena VIFX memiliki 21 kantor cabang yang tersebar di Indonesia. Anda bisa datang langsung untuk berkonsultasi tentang trading.</p>
+        <p>
+          Kami selalu dekat dengan Anda karena VIFX memiliki 21 kantor cabang yang tersebar di Indonesia. Anda bisa datang langsung untuk berkonsultasi tentang trading. 
+          Dengan jaringan kantor cabang yang luas, kami berkomitmen untuk memberikan dukungan dan pelayanan terbaik kepada para trader di seluruh Indonesia. 
+          Tim profesional kami siap membantu Anda dengan informasi terkini, edukasi, dan panduan praktis untuk memaksimalkan potensi trading Anda. 
+          Setiap kantor cabang kami dilengkapi dengan fasilitas modern dan layanan yang ramah, memastikan pengalaman Anda bersama kami selalu memuaskan. 
+          Mari bergabung bersama kami untuk memulai perjalanan trading yang sukses dan terpercaya.
+        </p>
       </div>
     </div>
 

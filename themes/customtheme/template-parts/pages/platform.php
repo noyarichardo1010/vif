@@ -6,10 +6,42 @@
     </div>
 
     <div class="button-download-list--container">
-      <button type="button" class="button-download-platform">Google Play</button>
-      <button type="button" class="button-download-platform">App Store</button>
-      <button type="button" class="button-download-platform">Windows OS</button>
-      <button type="button" class="button-download-platform">MAC OS</button>
+      <a href="#">
+        <button type="button" class="button-download-platform">
+          <span>
+            <img src="https://trashbox.ru/apk_icons/topic_98845_256.png" alt="google playstore logo">
+          </span>
+          Google Play
+        </button>
+      </a>
+
+      <a href="#">
+        <button type="button" class="button-download-platform">
+          <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktRCkIHm76O8GQ_FwU9MyXdsHHAaUgu6iQw&s" alt="app store logo">
+          </span>
+          
+          App Store
+        </button>
+      </a>
+
+      <a href="#">
+        <button type="button" class="button-download-platform">
+          <span>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/020/975/574/small/window-10-logo-window-10-icon-transparent-free-png.png" alt="windows logo">
+          </span>
+          Windows OS
+        </button>
+      </a>
+
+      <a href="#">
+        <button type="button" class="button-download-platform">
+          <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BJuVK-umEr4XUCaabOhsDPY8rdwdwwnkOUjsFU9NzQhY9HjPjdcYArXq-UqjpsFbdoA&usqp=CAU" alt="mac os logo">
+          </span>
+          MAC OS
+        </button>
+      </a>
     </div>
   </div>
 
@@ -30,8 +62,8 @@
       </div>
 
       <div class="illustration-section">
-        <h1>Image Asset Place</h1>
-        <!-- <img src="https://vifx.co.id/wp-content/uploads//image-big-metatrader-1024x532.png" alt=""> -->
+        <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/07/image-big-metatrader.png" alt="meta-trader-5" /> -->
+        <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/image-big-metatrader.png" alt="meta-trader-5" />
       </div>
     </div>
 

@@ -5,10 +5,11 @@
         <h1 class='hero-title'>Broker Terbaik Trading <span class="highlight">Forex</span></h1>
         <p class='hero-paragraph'>Bantuan layanan tersebar di 21 cabang seluruh Indonesia</p>
       </div>
+
       <div class='hero--content'>
         <div class="hero-banner-container">
-          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/06/hero-homepage.jpg" alt="hero-homepage"> -->
-          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/06/hero-homepage-scaled.jpg" alt="hero-homepage">
+          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/06/hero-homepage.jpg" alt="hero-homepage" /> -->
+          <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/06/hero-homepage-scaled.jpg" alt="hero-homepage" />
         </div>
       </div>
     </div>

@@ -401,7 +401,7 @@ nav {
 .hero-divider {
   width: 100%;
   height: 1px;
-  background-color: orange;
+  background-color: var(--light-blue-custom);
   margin: 2rem 0;
 
   border: none;
@@ -444,12 +444,15 @@ nav {
   font-size: 3em;
   /* color: var(--primary-dark); */
   color: var(--secondary-color);
-  margin: 0;
+  margin: 0 0 0;
   font-weight: 700;
+  line-height: 5.5rem;
 
   .highlight {
-    background-color: var(--primary-dark);
-    color: var(--secondary-color);
+    /* background-color: var(--primary-dark); */
+    background-color: white;
+    /* color: var(--secondary-color); */
+    color: black;
     border-radius: 12px;
     padding: 0 0.3rem;
     margin: 0;
@@ -1089,7 +1092,7 @@ nav {
 }
 
 .about-us-market--container {
-  margin: 5rem 0;
+  margin: 5rem 0 0;
 
   display: flex;
   flex-direction: column;
@@ -1111,7 +1114,7 @@ nav {
     &:hover {
       background-color: white;
       color: var(--light-blue-custom);
-      border: 1px solid rgba(0, 0, 0, 0.3);
+      border: 1px solid transparent;
     }
   }
 }
@@ -1242,25 +1245,29 @@ nav {
   align-items: center;
   overflow: hidden;
   
-  margin-top: 2rem;
+  margin-top: 9rem;
 }
 
 .product-list-slider--container {
   display: flex;
   align-items: stretch;
   gap: 1rem;
+
   overflow-x: scroll;
-  padding-bottom: 1rem;
+  overflow-y: hidden;
+  padding-bottom: 3.5rem;
   margin-top: 3rem;
-  width: 100%;
+  /* width: 100%; */
 
   &::-webkit-scrollbar {
-    height: 8px;
+    width: 20px;
+    height: 7px;
   }
 
   &::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    margin: 0 400px;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -1440,6 +1447,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   column-gap: 5rem;
+
+  margin-top: 2rem;
 }
 
 .feature-benefit-item {
@@ -1450,7 +1459,7 @@ nav {
   justify-content: center;
   align-items: center;
 
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 
   .title {
     font-size: 1.5em;
@@ -1490,8 +1499,9 @@ nav {
     flex-direction: column;
 
     .title {
-      font-size: 1.5em;
+      font-size: 2.5em;
       font-weight: 600;
+      margin-bottom: 0.5rem;
     }
 
   }
@@ -1571,19 +1581,39 @@ nav {
   align-self: center;
 }
 
-.button-download-platform {
-  background: white;
-  border-radius: 10px;
-  padding: 0.7rem 1.5rem;
+a {
+  text-decoration: none;
 
-  font-size: 1em;
-  font-weight: 600;
-
-  color: var(--light-blue-custom);
+  .button-download-platform {
+    background: white;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
   
-  cursor: pointer;
-  border: none;
+    font-size: 1em;
+    font-weight: 600;
+  
+    color: var(--light-blue-custom);
+    
+    cursor: pointer;
+    border: none;
+  
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    span {
+      width: 30px;
+      height: 30px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
+
 
 .page-platform-trader {
   display: flex;
@@ -1599,11 +1629,17 @@ nav {
 
   .illustration-section {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -1700,7 +1736,7 @@ nav {
 }
 
 .accordion--container {
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid transparent;
   border-radius: 10px;
 
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1771,6 +1807,8 @@ nav {
   gap: 2rem;
 
   text-align: start;
+
+  margin-top: 5rem;
 
   .half-section {
     width: 100%;
@@ -1845,7 +1883,7 @@ nav {
 }
 
 .location-text--container {
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 .maps--container {
@@ -1904,6 +1942,142 @@ nav {
 
       cursor: pointer;
     }
+  }
+}
+
+.our-location--container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  .map {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .tribute {
+      font-size: 0.6em;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .pin {
+      outline: none;
+      border: none;
+      
+      background-color: transparent;
+      /* background-image: url("http://localhost/vifx/wp-content/uploads/2024/07/pin-inactive.png"); */
+      background-image: url("http://wpdev.vifx.co.id/wp-content/uploads/2024/07/pin-inactive.png");
+      background-size: cover;
+      background-position: center;
+
+      cursor: pointer;
+
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      z-index: 10;
+      
+    }
+    .branch-1 {
+      /* surabaya */
+      left: 36%;
+      bottom: 18%;
+    }
+    .branch-2 {
+      /* yogyakarta */
+      left: 32%;
+      bottom: 15%;
+    }
+    .branch-3 {
+      /* jakarta */
+      left: 24.5%;
+      bottom: 24%;
+    }
+    .branch-4 {
+      /* bandung */
+      left: 26%;
+      bottom: 20%;
+    }
+    .branch-5 {
+      /* jember */
+      left: 38.5%;
+      bottom: 14%;
+    }
+    .branch-6 {
+      /* makasar */
+      left: 51.8%;
+      bottom: 31%;
+    }
+    .branch-7 {
+      /* malang */
+      left: 36%;
+      bottom: 15%;
+    }
+    .branch-8 {
+      /* manado */
+      left: 63%;
+      top: 28%;
+    }
+    .branch-9 {
+      /* mataram */
+      left: 44.5%;
+      bottom: 11%;
+    }
+    .branch-10 {
+      /* surakarta */
+      left: 32.8%;
+      bottom: 17.5%;
+    }
+    .branch-11 {
+      /* pekan baru */
+      left: 11.5%;
+      top: 28%;
+    }
+    .branch-12 {
+      /* palembang */
+      left: 19.5%;
+      bottom: 43%;
+    }
+    .branch-13 {
+      /* pontianak */
+      left: 29.8%;
+      top: 33%;
+    }
+    .branch-14 {
+      /* semarang */
+      left: 31.5%;
+      bottom: 20%;
+    }
+    .branch-15 {
+      /* cirebon */
+      left: 28%;
+      bottom: 21.5%;
+    }
+    .branch-16 {
+      /* cirebon */
+      left: 42.5%;
+      bottom: 11%;
+    }
+
+  }
+
+  .branchs--container {
+    /* display: flex; */
+    display: none;
+    height: 20px;
+    background-color: red;
   }
 }
 /* ===== END PAGE CONTACT ===== */
@@ -2101,8 +2275,8 @@ nav {
 
 #footer {
   /* background-color: var(--primary-dark); */
-  background-color: rgba(0, 0, 0, 0.8);
-  color: var(--secondary-color);
+  background-color: black;
+  color: white;
   padding: 8rem 0 3rem;
 }
 
@@ -2210,7 +2384,8 @@ nav {
   gap: 1rem;
 
   font-size: 0.8em;
-  color: rgb(from var(--secondary-grey) r g b / 0.3);
+  /* color: rgb(from var(--secondary-grey) r g b / 0.3); */
+  color: white;
   margin-top: 2rem;
 
   .copyright-section {
@@ -2314,11 +2489,12 @@ nav {
   }
 
   .hero-title {
-    font-size: 5em;
+    font-size: 4em;
+    margin-top: 5rem;
   }
 
   .hero-paragraph {
-    margin: 3rem 0 0;
+    /* margin: 3rem 0 0; */
     font-size: 1.1em;
   }
 
@@ -2654,21 +2830,35 @@ nav {
   .feature-benefit-item--container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 5rem;
+
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
 
   .support-office--container {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2.5rem;
     width: 100%;
     margin-top: 5rem;
   
     .image-section {
-      width: 65%;
+      width: 60%;
     }
   
     .text-section {
-      width: 35%;
+      width: 40%;
+
+      .title {
+        line-height: 3.5rem;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.8rem;
+        text-align: justify;
+      }
     }
   }
   /* ===== END PAGE FITUR ===== */
@@ -2888,7 +3078,7 @@ nav {
   /* ====  START PAGE ABOUT US ==== */
 
   #about-us {
-    padding: 0 0 17rem;
+    padding: 0 0 10rem;
   }
 
   .vision-mission--container {
@@ -2908,6 +3098,7 @@ nav {
 
   .branch-card--container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     margin: 2rem auto 0;
@@ -2922,7 +3113,7 @@ nav {
     padding: 1rem 3.5rem;
 
     border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
     .title {
