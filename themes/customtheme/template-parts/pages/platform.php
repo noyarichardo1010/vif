@@ -6,7 +6,7 @@
     </div>
 
     <div class="button-download-list--container">
-      <a href="#">
+      <a href="https://download.mql5.com/cdn/mobile/mt5/android?server=VictoryInternational-DEMO,VictoryInternational-REAL&utm_source=vifx.co.id&utm_campaign=vifx.co.id" target="_blank">
         <button type="button" class="button-download-platform">
           <span>
             <img src="https://trashbox.ru/apk_icons/topic_98845_256.png" alt="google playstore logo">
@@ -15,7 +15,7 @@
         </button>
       </a>
 
-      <a href="#">
+      <a href="https://download.mql5.com/cdn/mobile/mt5/ios?server=VictoryInternational-DEMO,VictoryInternational-REAL&utm_source=vifx.co.id&utm_campaign=vifx.co.id" target="_blank">
         <button type="button" class="button-download-platform">
           <span>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktRCkIHm76O8GQ_FwU9MyXdsHHAaUgu6iQw&s" alt="app store logo">
@@ -25,8 +25,8 @@
         </button>
       </a>
 
-      <a href="#">
-        <button type="button" class="button-download-platform">
+      <a href="https://download.mql5.com/cdn/web/pt.victory.international/mt5/victoryinternational5setup.exe">
+        <button type="button" class="button-download-platform" target="_blank">
           <span>
             <img src="https://static.vecteezy.com/system/resources/thumbnails/020/975/574/small/window-10-logo-window-10-icon-transparent-free-png.png" alt="windows logo">
           </span>
@@ -34,7 +34,7 @@
         </button>
       </a>
 
-      <a href="#">
+      <a href="https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/MetaTrader5.pkg.zip?utm_source=vifx.co.id&utm_campaign=vifx.co.id" target="_blank">
         <button type="button" class="button-download-platform">
           <span>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BJuVK-umEr4XUCaabOhsDPY8rdwdwwnkOUjsFU9NzQhY9HjPjdcYArXq-UqjpsFbdoA&usqp=CAU" alt="mac os logo">

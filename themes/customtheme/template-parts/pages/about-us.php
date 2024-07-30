@@ -96,6 +96,10 @@
       </div>
     </div>
 
+    <!-- <div>
+      <?php echo do_shortcode('[metaslider id="157"]'); ?>
+    </div> -->
+
     <div class='trusted-account--container mt -xl'>
       <h3 class='content-title center'>Keamanan Rekening Terpisah</h3>
 

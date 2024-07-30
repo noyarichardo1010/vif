@@ -2,7 +2,7 @@
   <div class="product-banner"></div>
   <div class="container feature-page">
     <div class="feature-benefits--container">
-      <h1 class="title text-light-blue">Banyak Manfaat Trading di VIFX</h1>
+      <h1 class="title text-light-blue text-center">Banyak Manfaat Trading di VIFX</h1>
       <p class="content-subtitle text-center">Sejumlah manfaat bisa Anda rasakan ketika trading di VIFX. Tidak hanya bisa mengakses ke pasar global, Anda bisa mendapatkan dukungan penuh dari tim profesional kami untuk meraih keberhasilan di dalam dunia trading.</p>
 
       <div class="feature-benefit-item--container">

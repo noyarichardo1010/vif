@@ -1,7 +1,8 @@
 <footer id='footer'>
   <div class='container footer--container'>
     <div class='footer-content--container half px-large'>
-      <img src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' width='120' height='27' alt='company icon footer'/>
+      <!-- <img src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' width='120' height='27' alt='company icon footer'/> -->
+      <img src='http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png' width='120' height='27' alt='company icon footer'/>
       <p class='footer-paragraph'>
         Pakuwon Center
         Superblock Tunjungan City

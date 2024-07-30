@@ -5,6 +5,7 @@
               <!-- <?php bloginfo( 'name' ); ?> -->
 
               <!-- <img id="navbar-logo-img" src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' alt='company icon'/> -->
+
               <img id="navbar-logo-img" src='http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png' alt='company icon'/>
           </a>
       </div>
