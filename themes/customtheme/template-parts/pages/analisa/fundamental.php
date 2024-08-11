@@ -6,148 +6,73 @@
   <div class="container analyze-page">
      <div class="post-section">
       <div class="tabs--container">
-        <button class="active">Fundamental</button>
-        <button>Teknikal</button>
-        <button>News / Post</button>
+        <button class="active" data-category="fundamental">Fundamental</button>
+        <button data-category="teknikal">Teknikal</button>
+        <button data-category="news">News / Post</button>
       </div>
-      <div class="analyze-card--container">
-        <div class="analyze-card">
-          <div class="img-section">
-            <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
-          </div>
-
-          <div class="content-section">
-            <h1 class="title">Daily Market Suggestion</h1>
-
-            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
-
-            <span></span>
-
-            <span class="content">
-              Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
-            </span>
-
-            <span class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              27/06/2024
-            </span>
-          </div>
-        </div>
-
-        <div class="analyze-card">
-          <div class="img-section">
-            <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
-          </div>
-
-          <div class="content-section">
-            <h1 class="title">Daily Market Suggestion</h1>
-
-            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
-
-            <span class="content">
-              Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
-            </span>
-
-            <span class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              27/06/2024
-            </span>
+      <div>
+        <div class="analyze-card--container card-category-container fundamental">
+          <div class="analyze-card">
+            <div class="img-section">
+              <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
+            </div>
+  
+            <div class="content-section">
+              <h1 class="title">Daily Market Suggestion</h1>
+  
+              <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
+  
+              <span></span>
+  
+              <span class="content">
+                Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
+              </span>
+  
+              <span class="date">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                27/06/2024
+              </span>
+            </div>
           </div>
         </div>
 
-        <div class="analyze-card">
-          <div class="img-section">
-            <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
-          </div>
-
-          <div class="content-section">
-            <h1 class="title">Daily Market Suggestion</h1>
-
-            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
-
-            <span class="content">
-              Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
-            </span>
-
-            <span class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              27/06/2024
-            </span>
-          </div>
-        </div>
-
-        <div class="analyze-card">
-          <div class="img-section">
-            <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
-          </div>
-
-          <div class="content-section">
-            <h1 class="title">Daily Market Suggestion</h1>
-            
-            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
-
-            <span class="content">
-              Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
-            </span>
-
-            <span class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              27/06/2024
-            </span>
+        <div class="analyze-card--container card-category-container teknikal" style="display: none;">
+          <div class="analyze-card">
+            <div class="img-section">
+              <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
+            </div>
+  
+            <div class="content-section">
+              <h1 class="title">Daily Market Suggestion</h1>
+  
+              <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
+  
+              <span class="content">
+                Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
+              </span>
+  
+              <span class="date">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                27/06/2024
+              </span>
+            </div>
           </div>
         </div>
 
-        <div class="analyze-card">
-          <div class="img-section">
-            <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
-          </div>
+        <div class="analyze-card--container card-category-container news" style="display: none;">
+          <div class="news-card-analyze">
+            <div class="image-card">
+              <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg" alt="news 1">
+            </div>
 
-          <div class="content-section">
-            <h1 class="title">Daily Market Suggestion</h1>
-
-            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
-
-            <span class="content">
-              Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
-            </span>
-
-            <span class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              27/06/2024
-            </span>
-          </div>
-        </div>
-
-        <div class="analyze-card">
-          <div class="img-section">
-            <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
-          </div>
-
-          <div class="content-section">
-            <h1 class="title">Daily Market Suggestion</h1>
-
-            <h2 class="title mt-xs">XAUUSD - 27 Juni 2024</h2>
-
-            <span class="content">
-              Victory International Futures Daily Market Suggestion – 27 Juni 2024 XAUUSD OHLC
-            </span>
-
-            <span class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-              </svg>
-              27/06/2024
-            </span>
+            <div class="content-card">
+              <h1 class="title">News 1</h1>
+              <p style="font-size:0.8em; color: rgba(0, 0, 0, 0.6); margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla arcu vel lacus molestie pretium. Nunc ligula ante, maximus non venenatis ut, pharetra nec purus. Quisque maximus eu dui non tempus. Nullam semper augue dolor. Nullam a libero vitae lorem elementum egestas.</p>
+            </div>
           </div>
         </div>
       </div>

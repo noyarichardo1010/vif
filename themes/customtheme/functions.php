@@ -23,6 +23,12 @@ function vifx_theme_register_elementor_locations( $elementor_theme_manager ) {
 }
 add_action('elementor/theme/register_locations', 'vifx_theme_register_elementor_locations');
 
+function get_dynamic_image_url($image_path) {
+    $env = wp_get_environment_type(); // 'local', 'development', 'staging', 'production'
+    $base_url = ($env === 'local') ? 'http://localhost/vifx' : 'http://wpdev.vifx.co.id';
+    return $base_url . $image_path;
+}
+
 /** new code for new theme base (below) */
 
 // function your_theme_setup() {

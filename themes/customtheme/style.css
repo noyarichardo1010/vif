@@ -1741,9 +1741,16 @@ a {
   gap: 20px;
 
   margin-top: 4rem;
+  /* width: 100%; */
 }
 
 .accordion--container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.accordion-parent {
   border: 1px solid transparent;
   border-radius: 10px;
 
@@ -1768,6 +1775,8 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  flex: 1;
 
   svg {
     width: 25px;
@@ -1933,10 +1942,22 @@ a {
   }
 
   .branch-content--container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    padding: 1.5rem;
+    /* display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem; */
+    display: flex;
+    width: 100%;
+
+    ._{}
+
+    .branch-content--list {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 0.5rem;
+      padding: 0.5rem;
+
+      width: 100%;
+    }
     
     .branch-content {
       display: flex;
@@ -1982,15 +2003,15 @@ a {
       border: none;
       
       background-color: transparent;
-      /* background-image: url("http://localhost/vifx/wp-content/uploads/2024/07/pin-inactive.png"); */
-      background-image: url("http://wpdev.vifx.co.id/wp-content/uploads/2024/07/pin-inactive.png");
+      background-image: url("http://localhost/vifx/wp-content/uploads/2024/07/pin-inactive.png");
+      /* background-image: url("http://wpdev.vifx.co.id/wp-content/uploads/2024/07/pin-inactive.png"); */
       background-size: cover;
       background-position: center;
 
       cursor: pointer;
 
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       position: absolute;
       z-index: 10;
       
@@ -2071,7 +2092,7 @@ a {
       bottom: 21.5%;
     }
     .branch-16 {
-      /* cirebon */
+      /* Denpasar */
       left: 42.5%;
       bottom: 11%;
     }
@@ -2135,6 +2156,7 @@ a {
     /* width: 60%; */
     width: 100%;
     padding: 1rem 1.5rem;
+    /* position: relative; */
   }
   
   .post-list-section {
@@ -2416,6 +2438,94 @@ a {
   }
 }
 
+ /* style for modal popup */
+ /* modal branch */
+.popup-branch-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.popup-account-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+ /* style for tabs in analyze / news page */
+.card-category-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.card-category-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.news-card-analyze {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  display: flex;
+  flex-direction: column;
+
+
+  .image-card {
+    height: 60%;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content-card {
+    margin-top: 1.5rem;
+    text-align: center;
+
+    .title {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: var(--dark-1);
+
+      cursor: pointer;
+    }
+  }
+}
+
+/* style for accordions in educations page */
+
+.accordion-content {
+  /* display: none; */
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  padding: 0 10px;
+  
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 500px; /* Atur max-height yang cukup besar untuk menampung konten */
+  padding: 10px;
+}
+
+.accordion--container.active .accordion-content {
+  display: flex;
+}
+
+
 #not-found-page {
   padding: 15rem 5rem 10rem;
   display: flex;
@@ -2681,6 +2791,19 @@ a {
     font-size: 0.9em;
     text-align: center;
     flex: 1;
+  }
+
+  .cta-demo--container {
+
+    a {
+      width: 20%;
+    }
+
+    a > button {
+      font-size: 1em;
+      padding: 1rem 0;
+      width: 100%;
+    }
   }
 
   /* ====== section 3 (TRADING CONDITION) ====== */
@@ -3015,19 +3138,14 @@ a {
     }
   
     .branch-content--container {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-      padding: 1.5rem;
-      
-      .branch-content {
-        display: flex;
-  
-        padding: 1.5rem;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-  
-        cursor: pointer;
+      /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+
+      ._{}
+
+      .branch-content--list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        padding: 1rem;
       }
     }
   }

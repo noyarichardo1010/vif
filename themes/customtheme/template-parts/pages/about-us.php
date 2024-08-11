@@ -4,6 +4,106 @@
     <p class='content-subtitle text-white'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. Kami berkomitmen memberikan pengalaman perdagangan yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p>
   </div>
 
+<?php
+  $branches = [
+    [
+      'id' => 1,
+      'title' => 'Cabang 1',
+      'description' => 'Deskripsi Cabang 1',
+      'est_year' => '2005',
+      'photo' => 'https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-1.jpg'
+    ],
+    [
+      'id' => 2,
+      'title' => 'Cabang 2',
+      'description' => 'Deskripsi Cabang 2',
+      'est_year' => '2002',
+      'photo' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4mBCv8oTvterkWf7_D62F_WI2FBtvBf0Jg&s'
+    ],
+    [
+      'id' => 3,
+      'title' => 'Cabang 3',
+      'description' => 'Deskripsi Cabang 3',
+      'est_year' => '2013',
+      'photo' => 'https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-3-1.jpg'
+    ],
+    [
+      'id' => 4,
+      'title' => 'Cabang 4',
+      'description' => 'Deskripsi Cabang 4',
+      'est_year' => '2015',
+      'photo' => 'https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/07/full/1691412942-1081.jpg?im=FitAndFill=(826,465)'
+    ],
+    [
+      'id' => 5,
+      'title' => 'Cabang 5',
+      'description' => 'Deskripsi Cabang 5',
+      'est_year' => '2019',
+      'photo' => 'https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg'
+    ]
+  ];
+
+  $accounts = [
+    [
+      'id' => 1,
+      'logo' => 'https://i0.wp.com/vectorez.biz.id/wp-content/uploads/2023/10/Logo-Bank-Central-Asia-BCA.png?resize=2657%2C834&ssl=1',
+      'name' => 'Bank Central Asia',
+      'description' => 'Cabang: Veteran, Surabaya',
+      'account_numbers' => [
+        [
+          'id' => 1,
+          'currency' => 'idr',
+          'number' => '0101.61.6699'
+        ],
+        [
+          'id' => 2,
+          'currency' => 'usd',
+          'number' => '0101.61.2588'
+        ]
+      ]
+    ],
+    [
+      'id' => 2,
+      'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/CIMB_Niaga_logo.svg/1200px-CIMB_Niaga_logo.svg.png',
+      'name' => 'Bank CIMB Niaga',
+      'description' => 'Cabang: Sudirman, Surabaya',
+      'account_numbers' => [
+        [
+          'id' => 1,
+          'currency' => 'idr',
+          'number' => '0101.61.6699'
+        ]
+      ]
+    ],
+    [
+      'id' => 3,
+      'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/2560px-Bank_Mandiri_logo_2016.svg.png',
+      'name' => 'Bank Mandiri',
+      'description' => 'Cabang: Basuki Rahmat, Surabaya',
+      'account_numbers' => [
+        [
+          'id' => 1,
+          'currency' => 'idr',
+          'number' => '142.00.0178787.7'
+        ]
+      ]
+    ],
+    [
+      'id' => 4,
+      'logo' => 'https://1.bp.blogspot.com/-QyZzjGcf8Yo/TcJNc4MVUeI/AAAAAAAADjI/3nqoarlG9wU/s1600/Bank_Sinarmas.png',
+      'name' => 'Bank Sinar Mas',
+      'description' => 'Cabang: Diponegoro, Surabaya',
+      'account_numbers' => [
+        [
+          'id' => 1,
+          'currency' => 'idr',
+          'number' => '004.756.9079'
+        ]
+      ]
+    ]
+  ];
+?>
+
   <div class='container about-us--container mt -xl'>
     <div class='vision-mission--container'>
       <h3 class='content-title center'>Keunggulan Kami</h3>
@@ -39,60 +139,28 @@
       <h1 class="text-center">Cabang - Cabang VIFX</h1>
 
       <div class="branch-card--container">
-        <div class="branch-card">
-          <h2 class="title">Cabang 1</h2>
-          <span class="years">Est: 2005</span>
-          
-          <div class="branch-head-foto">
-            <img src="https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-1.jpg" alt="photo head branch">
+
+        <?php foreach ($branches as $branch): ?>
+          <div class="branch-card">
+            <h2 class="title"><?php echo $branch['title']; ?></h2>
+            <span class="years">Est: <?php echo $branch['est_year']; ?></span>
+            
+            <div class="branch-head-foto">
+              <img src="<?php echo $branch['photo']; ?>" alt="<?php echo $branch['title'] . ' photos'; ?>">
+            </div>
+
+            <button
+              class="open-branch-modal-branch popmake-173"
+              data-title="<?php echo $branch['title']; ?>"
+              data-description="<?php echo $branch['description']; ?>"
+              data-image="<?php echo $branch['photo']; ?>"
+              data-est-year="<?php echo $branch['est_year']; ?>"
+            >
+              Info
+            </button>
           </div>
+        <?php endforeach; ?>
 
-          <button>Info</button>
-        </div>
-
-        <div class="branch-card">
-          <h2 class="title">Cabang 2</h2>
-          <span class="years">Est: 2002</span>
-          
-          <div class="branch-head-foto">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4mBCv8oTvterkWf7_D62F_WI2FBtvBf0Jg&s" alt="photo head branch">
-          </div>
-
-          <button>Info</button>
-        </div>
-
-        <div class="branch-card">
-          <h2 class="title">Cabang 3</h2>
-          <span class="years">Est: 2013</span>
-          
-          <div class="branch-head-foto">
-            <img src="https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-3-1.jpg" alt="photo head branch">
-          </div>
-
-          <button>Info</button>
-        </div>
-
-        <div class="branch-card">
-          <h2 class="title">Cabang 4</h2>
-          <span class="years">Est: 2015</span>
-          
-          <div class="branch-head-foto">
-            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/07/full/1691412942-1081.jpg?im=FitAndFill=(826,465)" alt="photo head branch">
-          </div>
-
-          <button>Info</button>
-        </div>
-
-        <div class="branch-card">
-          <h2 class="title">Cabang 5</h2>
-          <span class="years">Est: 2019</span>
-          
-          <div class="branch-head-foto">
-            <img src="https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg" alt="photo head branch">
-          </div>
-
-          <button>Info</button>
-        </div>
       </div>
     </div>
 
@@ -144,18 +212,17 @@
           <span>004.756.9079</span>
         </div> -->
 
-        <button type="button">
-          <img src="https://i0.wp.com/vectorez.biz.id/wp-content/uploads/2023/10/Logo-Bank-Central-Asia-BCA.png?resize=2657%2C834&ssl=1" alt="bank account 1">
-        </button>
-        <button type="button">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/CIMB_Niaga_logo.svg/1200px-CIMB_Niaga_logo.svg.png" alt="bank account 2">
-        </button>
-        <button type="button">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/2560px-Bank_Mandiri_logo_2016.svg.png" alt="bank account 3">
-        </button>
-        <button type="button">
-          <img src="https://1.bp.blogspot.com/-QyZzjGcf8Yo/TcJNc4MVUeI/AAAAAAAADjI/3nqoarlG9wU/s1600/Bank_Sinarmas.png" alt="bank account 4">
-        </button>
+        <?php foreach ($accounts as $acc): ?>
+          <button
+            type="button"
+            class="open-account-modal-branch popmake-188"
+            data-name="<?php echo htmlspecialchars($acc['name'], ENT_QUOTES, 'UTF-8'); ?>"
+            data-description="<?php echo htmlspecialchars($acc['description'], ENT_QUOTES, 'UTF-8'); ?>"
+            data-account-number-list="<?php echo htmlspecialchars(json_encode($acc['account_numbers']), ENT_QUOTES, 'UTF-8'); ?>"
+          >
+            <img src="<?php echo htmlspecialchars($acc['logo'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($acc['name'] . ' logos', ENT_QUOTES, 'UTF-8'); ?>">
+          </button>
+        <?php endforeach ?>
       </div>
     </div>
 
