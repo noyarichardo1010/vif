@@ -1,4 +1,7 @@
-<section id='hero'>
+<?php
+  $banner_url = get_dynamic_image_url('/wp-content/uploads/2024/08/Untitled-11-01-scaled.jpg');
+?>
+<section id='hero' style="background-image: url('<?php echo $banner_url; ?>')">
   <div class='container'>
     <div class='hero--container'>
       <div class='hero--content'>
@@ -8,7 +11,6 @@
 
       <div class='hero--content'>
         <div class="hero-banner-container">
-          <!-- <img src="http://localhost/vifx/wp-content/uploads/2024/06/hero-homepage.jpg" alt="hero-homepage" /> -->
           <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/06/hero-homepage-scaled.jpg" alt="hero-homepage" />
         </div>
       </div>

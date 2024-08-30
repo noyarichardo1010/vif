@@ -833,7 +833,7 @@ nav {
 #hero {
   /* background-image: url('http://localhost/vifx/wp-content/uploads/2024/06/hero-homepage.jpg'); */
   /* background-image: url('http://wpdev.vifx.co.id/wp-content/uploads/2024/06/hero-homepage-scaled.jpg'); */
-  background-image: url('http://localhost/vifx/wp-content/uploads/2024/08/Untitled-11-01-scaled.jpg');
+  /* background-image: url('http://localhost/vifx/wp-content/uploads/2024/08/Untitled-11-01-scaled.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -1502,7 +1502,7 @@ nav {
 
 /* ====== START ABOUT US ====== */
 .about-us-hero {
-  background: url('http://localhost/vifx/wp-content/uploads/2024/08/WIJE9737ed-scaled.jpg');
+  /* background: url('http://localhost/vifx/wp-content/uploads/2024/08/WIJE9737ed-scaled.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -1754,7 +1754,7 @@ nav {
 }
 
 .product-banner {
-  background: url('http://localhost/vifx/wp-content/uploads/2024/08/Untitled-12-01-scaled.jpg');
+  /* background: url('http://localhost/vifx/wp-content/uploads/2024/08/Untitled-12-01-scaled.jpg'); */
   
   width: 100%;
   min-height: 150px;
@@ -1919,7 +1919,7 @@ nav {
 }
 
 .feature-banner {
-  background: url('http://localhost/vifx/wp-content/uploads/2024/08/team-working-together-project-scaled.jpg');
+  /* background: url('http://localhost/vifx/wp-content/uploads/2024/08/team-working-together-project-scaled.jpg'); */
   
   width: 100%;
   min-height: 250px;
@@ -2663,7 +2663,7 @@ a {
       border: none;
       
       background-color: transparent;
-      background-image: url("http://localhost/vifx/wp-content/uploads/2024/07/pin-inactive.png");
+      /* background-image: url("http://localhost/vifx/wp-content/uploads/2024/07/pin-inactive.png"); */
       /* background-image: url("http://wpdev.vifx.co.id/wp-content/uploads/2024/07/pin-inactive.png"); */
       background-size: cover;
       background-position: center;
@@ -2777,7 +2777,7 @@ a {
 }
 
 .analyze-page-hero {
-  background: url("http://localhost/vifx/wp-content/uploads/2024/08/172400800-scaled.jpg");
+  /* background: url("http://localhost/vifx/wp-content/uploads/2024/08/172400800-scaled.jpg"); */
 
   background-repeat: no-repeat;
   background-size: cover;

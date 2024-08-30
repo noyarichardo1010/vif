@@ -1,5 +1,9 @@
+<?php
+  $feature_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/team-working-together-project-scaled.jpg');
+?>
+
 <div id="feature">
-  <div class="feature-banner"></div>
+  <div class="feature-banner" style="background-image: url('<?php echo $feature_banner; ?>')"></div>
 
   <div class="container feature-page">
     <div class="feature-benefits--container">

@@ -1,12 +1,14 @@
+<?php 
+  $icon_navbar = get_dynamic_image_url('/wp-content/uploads/2024/04/logo-invert.png');
+?>
+
 <nav id='navbar' class='navbar on-top'>
   <div id='navbar-container'>
       <div class="navbar-brand">
           <a class="navbar-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
               <!-- <?php bloginfo( 'name' ); ?> -->
 
-              <img id="navbar-logo-img" src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' alt='company icon'/>
-
-              <!-- <img id="navbar-logo-img" src='http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png' alt='company icon'/> -->
+              <img id="navbar-logo-img" src='<?php echo $icon_navbar; ?>' alt='company icon'/>
           </a>
       </div>
 

@@ -1,5 +1,9 @@
+<?php
+  $analyze_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/172400800-scaled.jpg');
+?>
+
 <div id="analyze-page">
-  <div class="analyze-page-hero">
+  <div class="analyze-page-hero" style="background-image: url('<?php echo $analyze_banner; ?>')">
     <h1 class="content-title">Analisa pada VIFX</h1>
     <p class="content-subtitle">Portal seputar analisa teknikal dari analis VIFX yang membantumu menemukan peluang saat trading.</p>
   </div>

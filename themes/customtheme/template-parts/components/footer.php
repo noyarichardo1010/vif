@@ -1,8 +1,15 @@
+<?php
+  $footer_icon_1 = get_dynamic_image_url('/wp-content/uploads/2024/04/logo-invert.png');
+
+  $footer_bank_icon_1 = get_dynamic_image_url('/wp-content/uploads/2024/07/bca-white.png');
+  $footer_bank_icon_2 = get_dynamic_image_url('/wp-content/uploads/2024/07/cimb-white.png');
+  $footer_bank_icon_3 = get_dynamic_image_url('/wp-content/uploads/2024/07/mandiri-white.png');
+  $footer_bank_icon_4 = get_dynamic_image_url('/wp-content/uploads/2024/07/sinarmas-white.png');
+?>
 <footer id='footer'>
   <div class='container footer--container'>
     <div class='footer-content--container half px-large'>
-      <img src='http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png' width='120' height='27' alt='company icon footer'/>
-      <!-- <img src='http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png' width='120' height='27' alt='company icon footer'/> -->
+      <img src='<?php echo $footer_icon_1; ?>' width='120' height='27' alt='company icon footer'/>
       <p class='footer-paragraph'>
         Pakuwon Center
         Superblock Tunjungan City
@@ -13,23 +20,19 @@
 
       <div class="footer-account--section">
         <span class="footer-account--item">
-          <img src="http://localhost/vifx/wp-content/uploads/2024/07/bca-white.png" alt="bca" />
-          <!-- <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/bca-white.png" alt="bca" /> -->
+          <img src="<?php echo $footer_bank_icon_1; ?>" alt="bca" />
         </span>
 
         <span class="footer-account--item">
-          <img src="http://localhost/vifx/wp-content/uploads/2024/07/cimb-white.png" alt="cimb" />
-          <!-- <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/cimb-white.png" alt="cimb" /> -->
+          <img src="<?php echo $footer_bank_icon_2; ?>" alt="cimb" />
         </span>
 
         <span class="footer-account--item">
-          <img src="http://localhost/vifx/wp-content/uploads/2024/07/mandiri-white.png" alt="mandiri" />
-          <!-- <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/mandiri-white.png" alt="mandiri" /> -->
+          <img src="<?php echo $footer_bank_icon_3; ?>" alt="mandiri" />
         </span>
 
         <span class="footer-account--item">
-          <img src="http://localhost/vifx/wp-content/uploads/2024/07/sinarmas-white.png" alt="sinarmas" />
-          <!-- <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/sinarmas-white.png" alt="sinarmas" /> -->
+          <img src="<?php echo $footer_bank_icon_4; ?>" alt="sinarmas" />
         </span>
       </div>
     </div>

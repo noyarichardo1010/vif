@@ -9,14 +9,19 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
 function add_custom_scripts() {
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '', true);
 
+    $src_white_logo = get_dynamic_image_url('/wp-content/uploads/2024/04/logo-invert.png');
+    $src_black_logo = get_dynamic_image_url('/wp-content/uploads/2024/07/logo-black.png');
+
     $current_path = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+
 
     // Pass data to JavaScript
     wp_localize_script('custom-js', 'pageData', array(
     'isSingle' => is_single() ? true : false,
-    // 'currentPath' => home_url(add_query_arg(array(), $_SERVER['REQUEST_URI'])),
     'currentPath' => '/' . $current_path . '/',
-    'pagesWithWhiteBackground' => array('/faq/', '/panduan-trading/')
+    'pagesWithWhiteBackground' => array('/faq/', '/panduan-trading/'),
+    'srcWhiteLogo' => $src_white_logo,
+    'srcBlackLogo' => $src_black_logo
 ));
 }
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
@@ -28,7 +33,7 @@ function vifx_theme_setup() {
 add_action('after_setup_theme', 'vifx_theme_setup');
 
 function get_dynamic_image_url($image_path) {
-    $env = wp_get_environment_type(); // 'local', 'development', 'staging', 'production'
+    $env = wp_get_environment_type() ?? 'production'; // 'local', 'development', 'staging', 'production'
     $base_url = ($env === 'local') ? 'http://localhost/vifx' : 'http://wpdev.vifx.co.id';
     return $base_url . $image_path;
 }
@@ -457,11 +462,13 @@ function display_branch_data_shortcode($atts) {
 
         // $output .= '</div>';
         wp_reset_postdata(); // Mengembalikan query global ke kondisi awal
+        $url_by_env = get_dynamic_image_url('/wp-content/uploads/2024/07/indo-blue.png');
+        $pin_icon = get_dynamic_image_url('/wp-content/uploads/2024/07/pin-inactive.png');
 
         // Layout HTML dengan loop data yang didapat
         $output .= '<div class="our-location--container">
         <div class="map">
-            <img src="http://localhost/vifx/wp-content/uploads/2024/07/indo-blue.png" alt="our-location" />';
+            <img src="'.$url_by_env.'" alt="our-location" />';
       
             foreach ($branches as $branch) {
                 $output .= '<button
@@ -470,7 +477,7 @@ function display_branch_data_shortcode($atts) {
                 data-map-url="' . esc_url($branch['map-url']) . '"';
 
                 // Pengecekan untuk posisi
-                $styles = [];
+                $styles = ['background-image: url(' . $pin_icon . ')'];
                 if (isset($branch['position']['left']) && $branch['position']['left'] > -1) {
                     $styles[] = 'left: ' . esc_attr($branch['position']['left']);
                 }

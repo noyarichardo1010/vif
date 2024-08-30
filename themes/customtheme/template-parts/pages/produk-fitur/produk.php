@@ -1,5 +1,10 @@
+<?php
+  $product_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/Untitled-12-01-scaled.jpg');
+
+?>
+
 <div id="product">
-  <div class="product-banner">
+  <div class="product-banner" style="background-image: url('<?php echo $product_banner; ?>')">
     <div class="product-content--container">
       <h1 class="product-title">Produk - Produk</h1>
       <p class="product-paragraph">Dibawah ini adalah jenis jenis produk VIFX</p>

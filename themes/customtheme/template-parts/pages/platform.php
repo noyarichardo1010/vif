@@ -1,3 +1,7 @@
+<?php
+  $meta_trader = get_dynamic_image_url('/wp-content/uploads/2024/08/4cbbafddacf62c22169dfe093a3f.jpg');
+?>
+
 <div id="page-platform">
   <div class="page-platform--hero">
     <div class="content-text--container">
@@ -62,8 +66,7 @@
       </div>
 
       <div class="illustration-section">
-        <img src="http://localhost/vifx/wp-content/uploads/2024/08/4cbbafddacf62c22169dfe093a3f.jpg" alt="meta-trader-5" />
-        <!-- <img src="http://wpdev.vifx.co.id/wp-content/uploads/2024/07/image-big-metatrader.png" alt="meta-trader-5" /> -->
+        <img src="<?php echo $meta_trader; ?>" alt="meta-trader-5" />
       </div>
     </div>
 

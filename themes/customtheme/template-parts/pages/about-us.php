@@ -1,9 +1,3 @@
-<div id='about-us'>
-  <div class='about-us-hero'>
-    <!-- <h1 class='content-title text-white mt-3'>Tentang Kami</h1>
-    <p class='content-subtitle text-white text-center'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. <br> Kami berkomitmen memberikan pengalaman perdagangan yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p> -->
-  </div>
-
 <?php
   $accounts = [
     [
@@ -64,7 +58,23 @@
       ]
     ]
   ];
+
+  $about_us_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/WIJE9737ed-scaled.jpg');
+
+  $vision_icon_1 = get_dynamic_image_url('/wp-content/uploads/2024/08/vision-1.png');
+  $vision_icon_2 = get_dynamic_image_url('/wp-content/uploads/2024/08/mission.png');
+  $vision_icon_3 = get_dynamic_image_url('/wp-content/uploads/2024/08/commit.png');
+
+  $legality_img_1 = get_dynamic_image_url('/wp-content/uploads/2024/05/kementrian-perdagangan.png');
+  $legality_img_2 = get_dynamic_image_url('/wp-content/uploads/2024/05/ICDX.png');
+  $legality_img_3 = get_dynamic_image_url('/wp-content/uploads/2024/05/ICH.png');
 ?>
+
+<div id='about-us'>
+  <div class='about-us-hero' style="background-image: url('<?php echo $about_us_banner; ?>')">
+    <!-- <h1 class='content-title text-white mt-3'>Tentang Kami</h1>
+    <p class='content-subtitle text-white text-center'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. <br> Kami berkomitmen memberikan pengalaman perdagangan yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p> -->
+  </div>
 
   <section class='bg-blue'>
       <div style="padding: 2.5rem 0;">
@@ -84,7 +94,7 @@
           <span>&nbsp;</span>
           <div>
             <div class="vision-card-icon">
-              <img src="http://localhost/vifx/wp-content/uploads/2024/08/vision-1.png" alt="vision icon" />
+              <img src="<?php echo $vision_icon_1; ?>" alt="vision icon" />
               <h4 class='about-us-card--title mb-1'>VISI</h4>
             </div>
             <p class="vision-card--paragraph">Menjadi broker trading terpercaya dengan memberikan layanan terbaik yang diperlukan untuk membantu Anda mencapai tujuan saat trading.</p>
@@ -95,7 +105,7 @@
           <span>&nbsp;</span>
           <div>
             <div class="vision-card-icon">
-              <img src="http://localhost/vifx/wp-content/uploads/2024/08/mission.png" alt="mission icon" />
+              <img src="<?php echo $vision_icon_2; ?>" alt="mission icon" />
               <h4 class='about-us-card--title mb-1'>MISI</h4>
             </div>
             <p class="vision-card--paragraph">Berkomitmen menyediakan lingkungan trading aman dan nyaman yang memungkinkan trader dari setiap kalangan mencapai potensi tradingnya secara maksimal.</p>
@@ -106,7 +116,7 @@
           <span>&nbsp;</span>
           <div>
             <div class="vision-card-icon">
-              <img src="http://localhost/vifx/wp-content/uploads/2024/08/commit.png" alt="commitment icon" />
+              <img src="<?php echo $vision_icon_3; ?>" alt="commitment icon" />
               <h4 class='about-us-card--title mb-1'>KOMITMEN</h4>
             </div>
             <p class="vision-card--paragraph">Berpegang teguh pada prinsip transparansi dalam segala aspek. Memastikan semua transaksi perdagangan tanpa konflik kepentingan dan penuh kejujuran.</p>
@@ -191,7 +201,8 @@
       <div class='our-legality-content--container'>
         <div class='about-us-card vertical p-xl gap-md'>
           <div class='about-us-card-img--container large'>
-            <img src="http://localhost/vifx/wp-content/uploads/2024/05/kementrian-perdagangan.png" alt="legality img 1">
+            <img src="<?php echo $legality_img_1; ?>"
+            alt="legality img 1">
           </div>
           <div class='about-us-card-text--container'>
             <h4 class='about-us-card--title'>BAPPEBTI 2008</h4>
@@ -201,7 +212,8 @@
 
         <div class='about-us-card vertical p-xl gap-md'>
           <div class='about-us-card-img--container large'>
-            <img src="http://localhost/vifx/wp-content/uploads/2024/05/ICDX.png" alt="legality img 2">
+            <img src="<?php echo $legality_img_2; ?>"
+            alt="legality img 2">
           </div>
           <div class='about-us-card-text--container'>
             <h4 class='about-us-card--title'>ICDX 2010</h4>
@@ -211,7 +223,8 @@
 
         <div class='about-us-card vertical p-xl gap-md'>
           <div class='about-us-card-img--container large'>
-            <img src="http://localhost/vifx/wp-content/uploads/2024/05/ICH.png" alt="legality img 3">
+            <img src="<?php echo $legality_img_3; ?>"
+            alt="legality img 3">
           </div>
           <div class='about-us-card-text--container'>
             <h4 class='about-us-card--title'>ICH 2012</h4>
