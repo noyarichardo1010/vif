@@ -24,6 +24,16 @@ if ( is_front_page() ) {
   get_template_part( 'template-parts/pages/edukasi/panduan', 'panduan' );
 } elseif ( is_page( 'faq' ) ) {
   get_template_part( 'template-parts/pages/edukasi/faq', 'faq' );
+} elseif ( is_single() ) {
+  if ( 'product' === get_post_type() ) {
+      get_template_part( 'template-parts/content-single/single-product', 'product' );
+  } else {
+      if ( has_category( 'analisa-teknikal' ) ) {
+        get_template_part( 'template-parts/content-single/single-post-teknikal', 'post' );
+    } else {
+        get_template_part( 'template-parts/content-single/single-post', 'post' );
+    }
+  }
 } else {
   get_template_part( 'template-parts/components/not-found', 'not-found' );
   // echo 'halaman lain sedang ditampilkan';

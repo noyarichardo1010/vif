@@ -7,8 +7,10 @@
   </div>
 
   <div class="container accordion-wrapper">
-    <!-- ini page FAQ -->
-    <div class="accordion--container">
+
+    <?php echo do_shortcode('[display_custom_posts post_type="education" display_fields="description,type" type_education="panduan-trading"]'); ?>
+
+    <!-- <div class="accordion--container">
       <div class="accordion-parent">
         <div class="accordion-item--container">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -86,7 +88,7 @@
       <div class="accordion-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus dolor, pretium at tellus eget, lacinia ornare orci. Nullam laoreet dictum mauris. Nunc iaculis finibus enim, id dignissim diam ultrices vitae. Nam eget placerat dolor. Praesent scelerisque imperdiet ligula, nec sagittis mauris ultrices non. Fusce tortor magna, venenatis id nibh at, vulputate vestibulum nisi. Nunc laoreet, erat id aliquet tristique, metus urna varius lacus, eget convallis orci purus sed risus. Cras vestibulum fringilla sapien sit amet eleifend. Nullam hendrerit libero a erat accumsan euismod. Vestibulum pulvinar sodales dictum.</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class='about-us-market--container'>

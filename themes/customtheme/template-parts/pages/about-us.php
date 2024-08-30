@@ -1,48 +1,10 @@
 <div id='about-us'>
   <div class='about-us-hero'>
-    <h1 class='content-title text-white'>Tentang Kami</h1>
-    <p class='content-subtitle text-white'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. Kami berkomitmen memberikan pengalaman perdagangan yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p>
+    <!-- <h1 class='content-title text-white mt-3'>Tentang Kami</h1>
+    <p class='content-subtitle text-white text-center'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. <br> Kami berkomitmen memberikan pengalaman perdagangan yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p> -->
   </div>
 
 <?php
-  $branches = [
-    [
-      'id' => 1,
-      'title' => 'Cabang 1',
-      'description' => 'Deskripsi Cabang 1',
-      'est_year' => '2005',
-      'photo' => 'https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-1.jpg'
-    ],
-    [
-      'id' => 2,
-      'title' => 'Cabang 2',
-      'description' => 'Deskripsi Cabang 2',
-      'est_year' => '2002',
-      'photo' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4mBCv8oTvterkWf7_D62F_WI2FBtvBf0Jg&s'
-    ],
-    [
-      'id' => 3,
-      'title' => 'Cabang 3',
-      'description' => 'Deskripsi Cabang 3',
-      'est_year' => '2013',
-      'photo' => 'https://headshots-inc.com/wp-content/uploads/2023/03/CEO-Headshot-Examples-3-1.jpg'
-    ],
-    [
-      'id' => 4,
-      'title' => 'Cabang 4',
-      'description' => 'Deskripsi Cabang 4',
-      'est_year' => '2015',
-      'photo' => 'https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/07/full/1691412942-1081.jpg?im=FitAndFill=(826,465)'
-    ],
-    [
-      'id' => 5,
-      'title' => 'Cabang 5',
-      'description' => 'Deskripsi Cabang 5',
-      'est_year' => '2019',
-      'photo' => 'https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg'
-    ]
-  ];
-
   $accounts = [
     [
       'id' => 1,
@@ -104,63 +66,60 @@
   ];
 ?>
 
+  <section class='bg-blue'>
+      <div style="padding: 2.5rem 0;">
+        <h1 class='content-title text-center'>Tentang Kami</h1>
+        <div style="display: flex; justify-content: center; width: 100%;">
+          <p class='content-subtitle text-center'>VIFX memiliki berbagai fitur dan layanan unggul untuk Anda. Kami berkomitmen memberikan pengalaman perdagangan <br> yang luar biasa dengan mengutamakan keamanan serta kenyamanan nasabah. Inilah yang membuat kami berbeda.</p>
+        </div>
+      </div>
+  </section>
+
   <div class='container about-us--container mt -xl'>
     <div class='vision-mission--container'>
       <h3 class='content-title center'>Keunggulan Kami</h3>
 
       <div class='vision-mission-card--container'>
-        <div class='about-us-card horizontal p-lg gap-md'>
+        <div class='about-us-card horizontal p-md gap-md'>
           <span>&nbsp;</span>
           <div>
-            <h4 class='about-us-card--title mb-1'>VISI</h4>
-            <span>Menjadi broker trading terpercaya dengan memberikan layanan terbaik yang diperlukan untuk membantu Anda mencapai tujuan saat trading.</span>
+            <div class="vision-card-icon">
+              <img src="http://localhost/vifx/wp-content/uploads/2024/08/vision-1.png" alt="vision icon" />
+              <h4 class='about-us-card--title mb-1'>VISI</h4>
+            </div>
+            <p class="vision-card--paragraph">Menjadi broker trading terpercaya dengan memberikan layanan terbaik yang diperlukan untuk membantu Anda mencapai tujuan saat trading.</p>
           </div>
         </div>
 
-        <div class='about-us-card horizontal p-lg gap-md'>
+        <div class='about-us-card horizontal p-md gap-md'>
           <span>&nbsp;</span>
           <div>
-            <h4 class='about-us-card--title mb-1'>MISI</h4>
-            <span>Berkomitmen menyediakan lingkungan trading aman dan nyaman yang memungkinkan trader dari setiap kalangan mencapai potensi tradingnya secara maksimal.</span>
+            <div class="vision-card-icon">
+              <img src="http://localhost/vifx/wp-content/uploads/2024/08/mission.png" alt="mission icon" />
+              <h4 class='about-us-card--title mb-1'>MISI</h4>
+            </div>
+            <p class="vision-card--paragraph">Berkomitmen menyediakan lingkungan trading aman dan nyaman yang memungkinkan trader dari setiap kalangan mencapai potensi tradingnya secara maksimal.</p>
           </div>
         </div>
 
-        <div class='about-us-card horizontal p-lg gap-md'>
+        <div class='about-us-card horizontal p-md gap-md'>
           <span>&nbsp;</span>
           <div>
-            <h4 class='about-us-card--title mb-1'>KOMITMEN</h4>
-            <span>Berpegang teguh pada prinsip transparansi dalam segala aspek. Memastikan semua transaksi perdagangan tanpa konflik kepentingan dan penuh kejujuran.</span>
+            <div class="vision-card-icon">
+              <img src="http://localhost/vifx/wp-content/uploads/2024/08/commit.png" alt="commitment icon" />
+              <h4 class='about-us-card--title mb-1'>KOMITMEN</h4>
+            </div>
+            <p class="vision-card--paragraph">Berpegang teguh pada prinsip transparansi dalam segala aspek. Memastikan semua transaksi perdagangan tanpa konflik kepentingan dan penuh kejujuran.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="branch--container">
-      <h1 class="text-center">Cabang - Cabang VIFX</h1>
+      <h1 class="text-center">Kepala Cabang VIFX</h1>
 
-      <div class="branch-card--container">
-
-        <?php foreach ($branches as $branch): ?>
-          <div class="branch-card">
-            <h2 class="title"><?php echo $branch['title']; ?></h2>
-            <span class="years">Est: <?php echo $branch['est_year']; ?></span>
-            
-            <div class="branch-head-foto">
-              <img src="<?php echo $branch['photo']; ?>" alt="<?php echo $branch['title'] . ' photos'; ?>">
-            </div>
-
-            <button
-              class="open-branch-modal-branch popmake-173"
-              data-title="<?php echo $branch['title']; ?>"
-              data-description="<?php echo $branch['description']; ?>"
-              data-image="<?php echo $branch['photo']; ?>"
-              data-est-year="<?php echo $branch['est_year']; ?>"
-            >
-              Info
-            </button>
-          </div>
-        <?php endforeach; ?>
-
+      <div class="branch-card--container scroll-custom">
+        <?php echo do_shortcode('[display_custom_posts post_type="head_branch" display_fields="established_year, photo_head_branch"]'); ?>
       </div>
     </div>
 
@@ -168,7 +127,7 @@
       <?php echo do_shortcode('[metaslider id="157"]'); ?>
     </div> -->
 
-    <div class='trusted-account--container mt -xl'>
+    <div class='trusted-account--container mt -sm'>
       <h3 class='content-title center'>Keamanan Rekening Terpisah</h3>
 
       <div class='trusted-account-card--container'>

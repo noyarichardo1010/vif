@@ -4,10 +4,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const navbarLogo = document.getElementById('navbar-logo-img');
 
-    // const srcWhiteLogo = 'http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png'
-    // const srcBlackLogo = 'http://localhost/vifx/wp-content/uploads/2024/07/logo-black.png'
-    const srcWhiteLogo = 'http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png'
-    const srcBlackLogo = 'http://wpdev.vifx.co.id/wp-content/uploads/2024/07/logo-black.png'
+    const srcWhiteLogo = 'http://localhost/vifx/wp-content/uploads/2024/04/logo-invert.png'
+    const srcBlackLogo = 'http://localhost/vifx/wp-content/uploads/2024/07/logo-black.png'
+    // const srcWhiteLogo = 'http://wpdev.vifx.co.id/wp-content/uploads/2024/06/logo-invert.png'
+    // const srcBlackLogo = 'http://wpdev.vifx.co.id/wp-content/uploads/2024/07/logo-black.png'
+
+    const { currentPath, isSingle, pagesWithWhiteBackground } = pageData;
+
+    function updateNavbarClass(add = false) {
+        navbar.classList.toggle('scrolled', add);
+        navbar.classList.toggle('on-top', !add);
+        navbarLogo.src = add ? srcBlackLogo : srcWhiteLogo; // Adjust paths as needed
+    }
+
+    function initialNavbarSetup() {
+        const shouldApplyScrolledClass = pagesWithWhiteBackground.some(page => currentPath.includes(page)) || isSingle;
+        updateNavbarClass(shouldApplyScrolledClass);
+    }
 
     function addScrolledClass() {
         navbar.classList.add('scrolled');
@@ -24,12 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function handleScroll() {
-        scrollPosition = window.scrollY;
+        const shouldAddScrolled = window.scrollY > 50;
 
-        if (scrollPosition > 50) {
-            addScrolledClass();
-        } else {
-            removeScrolledClass();
+        if (!pagesWithWhiteBackground.some(page => currentPath.includes(page)) && !isSingle) {
+            updateNavbarClass(shouldAddScrolled);
         }
     }
 
@@ -46,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
             document.getElementById("popup-branch-title").innerText = title;
-            document.getElementById("popup-branch-text").innerText = description;
+            document.getElementById("popup-branch-text").innerHTML = description;
             document.getElementById("popup-branch-est-year").innerText = `Est : ${est_year}`;
             document.getElementById("popup-branch-image").setAttribute("src", image);
             });
@@ -137,8 +148,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         accordions.forEach(accordion => {
             const content = accordion.querySelector('.accordion-content');
+
+            content.addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
         
-            accordion.addEventListener('click', () => {
+            accordion.addEventListener('click', (event) => {
               const isOpen = content.classList.contains('open');
         
               // Menutup semua accordion lainnya
@@ -195,7 +210,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
- 
+
+    initialNavbarSetup()
 
     popBranchModal()
     popAccountModal()
@@ -204,7 +220,6 @@ document.addEventListener('DOMContentLoaded', function() {
     handleAccordions()
 
     handleClickPinOnMap()
-
-
+    
     window.addEventListener('scroll', handleScroll);
 });

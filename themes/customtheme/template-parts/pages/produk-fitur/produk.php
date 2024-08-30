@@ -1,5 +1,11 @@
 <div id="product">
-  <div class="product-banner"></div>
+  <div class="product-banner">
+    <div class="product-content--container">
+      <h1 class="product-title">Produk - Produk</h1>
+      <p class="product-paragraph">Dibawah ini adalah jenis jenis produk VIFX</p>
+    </div>
+  </div>
+
   <div class="container product-page">
 
     <div class="product-list--container">
@@ -46,11 +52,9 @@
     </div>
 
     <div class="product-list-example2--container">
-      <h1 class="title text-light-blue">Produk - Produk</h1>
-      <p class="content-subtitle mt-xs text-center">Dibawah ini adalah jenis jenis produk VIFX</p>
-
-      <div class="product-list-slider--container">
-        <div class="product-item">
+      <div class="product-list-slider--container scroll-custom">
+        <?php echo do_shortcode('[display_custom_posts post_type="product" display_fields="short_description"]'); ?>
+        <!-- <div class="product-item">
           <span>&nbsp;</span>
           <div>
             <h1 class="title text-light-blue">Forex</h1>
@@ -98,7 +102,7 @@
           </div>
   
           <button>Lihat Selengkapnya</button>
-        </div>
+        </div> -->
       </div>
     </div>
 

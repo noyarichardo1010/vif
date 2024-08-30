@@ -2,7 +2,7 @@
   <div class='container'>
     <div class='hero--container'>
       <div class='hero--content'>
-        <h1 class='hero-title'>Broker Terbaik Trading <span class="highlight">Forex</span></h1>
+        <h1 class='hero-title'>Broker Terbaik Trading <span class="">Forex</span></h1>
         <p class='hero-paragraph'>Bantuan layanan tersebar di 21 cabang seluruh Indonesia</p>
       </div>
 
@@ -257,9 +257,7 @@
 <section class='trial-data--section'>
   <div>
     <h1>coba ambil data</h1>
-    <?php 
-      global $wpdb;
-
+    <?php
       $table_name = '_dummy_employees'; // Ganti 'nama_tabel_kustom' dengan nama tabel kustom Anda
 
       $results = $wpdb->get_results( "SELECT * FROM $table_name LIMIT 10" );
@@ -436,47 +434,17 @@
     <div class='why-us--container'>
       <h1 class='content-title mb-1'>Berita Terbaru</h1>
 
-      <div class="news-homepage--section">
-        <?php 
-          global $wpdb;
-          $tb_prefix = 'vifx_';
+      <div class="news-homepage--section scroll-custom">
+        <!-- <div class="news-card-homepage">
+          <div class="image-card">
+            <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg" alt="news 1">
+          </div>
 
-          $table_name = $tb_prefix. 'posts'; // Ganti 'nama_tabel_kustom' dengan nama tabel kustom Anda
-
-          // $results = $wpdb->get_results( "SELECT * FROM $table_name WHERE post_type LIKE '%post%' LIMIT 6" );
-          $results = $wpdb->get_results( "SELECT SQL_CALC_FOUND_ROWS vifx_posts.ID
-                                          FROM vifx_posts
-                                          LEFT JOIN vifx_term_relationships
-                                          ON (vifx_posts.ID = vifx_term_relationships.object_id)
-                                          WHERE 1=1
-                                          AND ( vifx_term_relationships.term_taxonomy_id IN (52) )
-                                          AND ((vifx_posts.post_type = 'post'
-                                          AND (vifx_posts.post_status = 'publish'
-                                          OR vifx_posts.post_status = 'private')))
-                                          GROUP BY vifx_posts.ID
-                                          ORDER BY vifx_posts.post_date DESC
-                                          LIMIT 0, 6" );
-
-          if ( $results ) {
-            // print_r($results);
-              foreach ( $results as $result ) { ?>
-                  <div class="news-card-homepage">
-                    <div class="image-card">
-                      <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg" alt="news 1">
-                    </div>
-
-                    <div class="content-card">
-                      <h1 class="title">Title Card</h1>
-                    </div>
-                  </div>
-            <?php }
-          } else { ?>
-            <div style="display: flex; justify-content: center; width: 100%;">
-              <span>No Data...</span>
-            </div>
-          <?php 
-          } 
-        ?>
+          <div class="content-card">
+            <h1 class="title">Title Card</h1>
+          </div>
+        </div> -->
+        <?php echo do_shortcode('[recent-posts posts="5" category="analisa fundamental"]'); ?>
       </div>
 
       <div class='why-use-content--container'>
@@ -558,8 +526,8 @@
     <div class='why-us--container'>
       <h1 class='content-title mb-1'>Analisa Teknikal Terbaru</h1>
 
-      <div>
-        <span>No Data...</span>
+      <div class="news-homepage--section scroll-custom">
+        <?php echo do_shortcode('[recent-posts posts="5" category="analisa teknikal"]'); ?>
       </div>
     </div>
   </div>
@@ -570,8 +538,8 @@
     <div class='why-us--container'>
       <h1 class='content-title mb-1'>Testimoni Nasabah</h1>
 
-      <div>
-        <span>No Data...</span>
+      <div class="testimony-card--container scroll-custom">
+        <?php echo do_shortcode('[display_custom_posts display_fields="testimony_writer,testimony,testimony_location,testimony_writer_photo"]'); ?>
       </div>
     </div>
   </div>

@@ -6,13 +6,18 @@
   <div class="container analyze-page">
      <div class="post-section">
       <div class="tabs--container">
-        <button class="active" data-category="fundamental">Fundamental</button>
-        <button data-category="teknikal">Teknikal</button>
-        <button data-category="news">News / Post</button>
+        <button class="active" data-category="analisa-fundamental">Fundamental</button>
+        <button data-category="analisa-teknikal">Teknikal</button>
+        <button data-category="post-news">News / Post</button>
       </div>
       <div>
-        <div class="analyze-card--container card-category-container fundamental">
-          <div class="analyze-card">
+        
+        <?php echo do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="analisa-fundamental"]') ?>
+        <?php echo do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="analisa-teknikal"]') ?>
+        <?php echo do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="post-news"]') ?>
+
+        <!-- <div class="card-category-container analisa-fundamental"> -->
+          <!-- <div class="analyze-card">
             <div class="img-section">
               <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
             </div>
@@ -35,11 +40,11 @@
                 27/06/2024
               </span>
             </div>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
 
-        <div class="analyze-card--container card-category-container teknikal" style="display: none;">
-          <div class="analyze-card">
+        <!-- <div class="card-category-container analisa-teknikal" style="display: none;"> -->
+          <!-- <div class="analyze-card">
             <div class="img-section">
               <img src="https://vifx.co.id/wp-content/uploads/XAUUSD.webp" alt="graph">
             </div>
@@ -60,11 +65,11 @@
                 27/06/2024
               </span>
             </div>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
 
-        <div class="analyze-card--container card-category-container news" style="display: none;">
-          <div class="news-card-analyze">
+        <!-- <div class="card-category-container post-news" style="display: none;"> -->
+          <!-- <div class="news-card-analyze">
             <div class="image-card">
               <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg" alt="news 1">
             </div>
@@ -73,8 +78,8 @@
               <h1 class="title">News 1</h1>
               <p style="font-size:0.8em; color: rgba(0, 0, 0, 0.6); margin-top: 0.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla arcu vel lacus molestie pretium. Nunc ligula ante, maximus non venenatis ut, pharetra nec purus. Quisque maximus eu dui non tempus. Nullam semper augue dolor. Nullam a libero vitae lorem elementum egestas.</p>
             </div>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
       </div>
      </div>
 
