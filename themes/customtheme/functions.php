@@ -367,7 +367,7 @@ function render_custom_posts($atts) {
                 $output .= '<h1 class="title text-light-blue">' . get_the_title() . '</h1>';
                 $output .= '<p class="subtitle text-center">' . $fields['short_description'] ?? '' . '</p>';
                 $output .= '</div>';
-                $output .= '<button><a href="'. esc_url($url) .'">Lihat Selengkapnya </a></button>';
+                $output .= '<a href="'. esc_url($url) .'"><button>Lihat Selengkapnya</button></a>';
                 $output .= '</div>';
             } elseif ($atts['post_type'] === 'education') {
                 $output .= '<div class="accordion--container">';

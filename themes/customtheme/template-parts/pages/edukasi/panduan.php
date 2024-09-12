@@ -95,6 +95,6 @@
     <h1 class="title-content text-center text-light-blue mb-1">Update Market Terkini di Handphone Anda</h1>
     <p class="subtitle-content text-center">Dapatkan update signal trading, moment market dan berita ekonomi penting setiap hari ke email Anda. Gratis!</p>
 
-    <button>Subscribe</button>
+    <a href="https://cabinet.vifx.co.id/cabinet/login"><button>Subscribe</button></a>
   </div>
 </div>

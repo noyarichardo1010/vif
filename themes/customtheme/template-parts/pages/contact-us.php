@@ -1,3 +1,10 @@
+<?php
+  $icon_tel = get_dynamic_image_url('/wp-content/uploads/2024/09/telephone.png');
+  $icon_fax = get_dynamic_image_url('/wp-content/uploads/2024/09/fax.png');
+  $icon_wa = get_dynamic_image_url('/wp-content/uploads/2024/09/whatsapp.png');
+  $icon_email = get_dynamic_image_url('/wp-content/uploads/2024/09/email.png');
+?>
+
 <div id="contact-us">
   <div class='contact-hero'>
     <h1 class='content-title text-white text-center'>VIF Siap Menjawab Kebutuhan Anda Saat Trading</h1>
@@ -227,36 +234,56 @@
       <div class="half-section">
         <div class="contact-content">
           <h1>Hotline Pengaduan Nasabah</h1>
-          <a href="#">0800 – 156 – 5758</a>
-          <a href="#">vifcompliance@vifx.co</a>
+          <a href="tel:0800 - 156 - 5758">0800 – 156 – 5758</a>
+          <a href="mailto:viflegal@vifx.co.id">viflegal@vifx.co.id</a>
         </div>
 
-        <div class="contact-content">
+        <div class="contact-content contact-address">
           <h1>Kantor Pusat</h1>
-          <span>Pakuwon Center</span>
+          <span class="bold">Pakuwon Center</span>
           <span>Superblock Tunjungan City Office Building <br> Lt. 15 Unit 5-7 Jl. Embong Malang No. 1, 3, 5, Surabaya, 60261</span>
         </div>
   
         <div class="contact-list--container">
-          <div class="contact-content">
-            <h3>Telepon</h3>
-            <span>0800 – 156 – 5758</span>
-            <span>031-9924-8699</span>
+          <div class="contact-content item-list">
+            <div class="contact-title">
+                <span class="icon">
+                    <img src="<?php echo $icon_tel; ?>" alt="telephone">
+                </span>
+                <h3>Telepon</h3>
+            </div>
+            <a href="tel:0800 - 156 - 5758">0800 – 156 – 5758</a>
+            <a href="tel:+62 31 9924 8699">031-9924-8699</a>
           </div>
 
-          <div class="contact-content">
-            <h3>FAX</h3>
-            <span>031-9925-1506</span>
+          <div class="contact-content item-list">
+            <div class="contact-title">
+                <span class="icon">
+                    <img src="<?php echo $icon_fax; ?>" alt="fax">
+                </span>
+                <h3>FAX</h3>
+            </div>
+            <a href="tel:+62 31 9925 1506">031-9925-1506</a>
           </div>
 
-          <div class="contact-content">
-            <h3>WhatsApp</h3>
-            <span>0822-1156-5758 (Settlement)</span>
+          <div class="contact-content item-list">
+            <div class="contact-title">
+                <span class="icon">
+                    <img src="<?php echo $icon_wa; ?>" alt="whatsapp">
+                </span>
+                <h3>WhatsApp</h3>
+            </div>
+            <a href="https://wa.me/6282211565758">0822-1156-5758 (Settlement)</a>
           </div>
 
-          <div class="contact-content">
-            <h3>Email</h3>
-            <span>settlement@vifx.co</span>
+          <div class="contact-content item-list">
+            <div class="contact-title">
+                <span class="icon">
+                    <img src="<?php echo $icon_email; ?>" alt="email">
+                </span>
+                <h3>Email</h3>
+            </div>
+            <a href="mailto:settlement@vifx.co">settlement@vifx.co</a>
           </div>
         </div>
       </div>

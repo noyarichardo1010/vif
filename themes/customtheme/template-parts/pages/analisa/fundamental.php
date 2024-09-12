@@ -1,5 +1,6 @@
 <?php
   $analyze_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/172400800-scaled.jpg');
+  // do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="post-news"]')
 ?>
 
 <div id="analyze-page">
@@ -12,13 +13,12 @@
       <div class="tabs--container">
         <button class="active" data-category="analisa-fundamental">Fundamental</button>
         <button data-category="analisa-teknikal">Teknikal</button>
-        <button data-category="post-news">News / Post</button>
+        <!-- <button data-category="post-news">News / Post</button> -->
       </div>
       <div>
         
         <?php echo do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="analisa-fundamental"]') ?>
         <?php echo do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="analisa-teknikal"]') ?>
-        <?php echo do_shortcode('[posts-by-category posts_per_page="-1" categories="analisa-fundamental,analisa-teknikal,post-news" current_category="post-news"]') ?>
 
         <!-- <div class="card-category-container analisa-fundamental"> -->
           <!-- <div class="analyze-card">

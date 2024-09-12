@@ -58,8 +58,8 @@
       ]
     ]
   ];
-
-  $about_us_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/WIJE9737ed-scaled.jpg');
+  // $about_us_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/WIJE9737ed-scaled.jpg');
+  $about_us_banner = get_dynamic_image_url('/wp-content/uploads/2024/09/WIJE9261ed-scaled.jpg');
 
   $vision_icon_1 = get_dynamic_image_url('/wp-content/uploads/2024/08/vision-1.png');
   $vision_icon_2 = get_dynamic_image_url('/wp-content/uploads/2024/08/mission.png');
@@ -133,10 +133,6 @@
       </div>
     </div>
 
-    <!-- <div>
-      <?php echo do_shortcode('[metaslider id="157"]'); ?>
-    </div> -->
-
     <div class='trusted-account--container mt -sm'>
       <h3 class='content-title center'>Keamanan Rekening Terpisah</h3>
 
@@ -190,6 +186,8 @@
             data-account-number-list="<?php echo htmlspecialchars(json_encode($acc['account_numbers']), ENT_QUOTES, 'UTF-8'); ?>"
           >
             <img src="<?php echo htmlspecialchars($acc['logo'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($acc['name'] . ' logos', ENT_QUOTES, 'UTF-8'); ?>">
+
+            <span>Detail</span>
           </button>
         <?php endforeach ?>
       </div>
@@ -242,7 +240,7 @@
       <h1 class="title-content text-center text-light-blue mb-1">Update Market Terkini di Handphone Anda</h1>
       <p class="subtitle-content text-center">Dapatkan update signal trading, moment market dan berita ekonomi penting setiap hari ke email Anda. Gratis!</p>
 
-      <button>Subscribe</button>
+      <a href="https://cabinet.vifx.co.id/cabinet/login" target="_blank" rel="noopener noreferrer"><button>Subscribe</button></a>
     </div>
   </div>
 </div>

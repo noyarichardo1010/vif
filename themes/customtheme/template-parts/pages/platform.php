@@ -53,7 +53,7 @@
     <div class="page-platform-trader">
       <div class="description-section">
         <h1 class="text-light-blue text-center mb-1">MetaTrader 5</h1>
-        <p class="page-platform--subtitl">Aplikasi trading terupdate untuk transaksi di semua instrumen trading. Meta Trader 5 menawarkan fitur-fitur unggulan seperti: </p>
+        <p class="page-platform--subtitle">Aplikasi trading terupdate untuk transaksi di semua instrumen trading. Meta Trader 5 menawarkan fitur-fitur unggulan seperti: </p>
         <ul class="bg-blue page-platform--list-content">
           <li>Tampilan paling user friendly</li>
           <li>Kemudahan menilai volatilitas pasar dengan fitur Depth of Market (DOM)</li>

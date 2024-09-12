@@ -13,49 +13,6 @@
 
   <div class="container product-page">
 
-    <div class="product-list--container">
-      <h1>haiii</h1>
-      <div class="product-item row--3-column">
-        <span>&nbsp;</span>
-        <h1 class="title text-light-blue">Forex</h1>
-        <p class="subtitle text-center">Beragam pilihan jenis mata uang dengan fleksibilitas waktu dan potensi profit yang besar</p>
-
-        <button>Lihat Selengkapnya</button>
-      </div>
-
-      <div class="product-item row--3-column">
-        <span>&nbsp;</span>
-        <h1 class="title text-light-blue">Emas</h1>
-        <p class="subtitle text-center">Kemudahan bertransaksi jual beli emas online yang legal dan keamanan terjamin</p>
-
-        <button>Lihat Selengkapnya</button>
-      </div>
-
-      <div class="product-item row--3-column">
-        <span>&nbsp;</span>
-        <h1 class="title text-light-blue">Silver</h1>
-        <p class="subtitle text-center">Instrumen yang menawarkan peluang pertumbuhan dengan volatilitas yang tinggi</p>
-
-        <button>Lihat Selengkapnya</button>
-      </div>
-
-      <div class="product-item row--2-column">
-        <span>&nbsp;</span>
-        <h1 class="title text-light-blue">Oil</h1>
-        <p class="subtitle text-center">Instrumen yang memberikan peluang keuntungan dari fluktuasi harga komoditas global</p>
-
-        <button>Lihat Selengkapnya</button>
-      </div>
-
-      <div class="product-item row--2-column">
-        <span>&nbsp;</span>
-        <h1 class="title text-light-blue">Index US</h1>
-        <p class="subtitle text-center">Untuk Anda yang ingin trading di saham gabungan paling aktif di dunia</p>
-
-        <button>Lihat Selengkapnya</button>
-      </div>
-    </div>
-
     <div class="product-list-example2--container">
       <div class="product-list-slider--container scroll-custom">
         <?php echo do_shortcode('[display_custom_posts post_type="product" display_fields="short_description"]'); ?>

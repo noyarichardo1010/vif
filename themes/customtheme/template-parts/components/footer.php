@@ -49,11 +49,20 @@
       </div>
   
       <div class='footer-content--container flex-1'>
-        <h1 class='footer-pages--title'>Documents</h1>
+        <h1 class='footer-pages--title'>Alat Trading</h1>
         <?php
         wp_nav_menu( array(
-            'menu' => 'Documents',
-            'theme_location' => 'secondary-menu',
+            'menu' => 'Alat-Trading',
+            'menu_class' => 'footer-nav',
+        ) );
+        ?>
+      </div>
+
+      <div class='footer-content--container flex-1'>
+        <h1 class='footer-pages--title'>Dukungan Trading</h1>
+        <?php
+        wp_nav_menu( array(
+            'menu' => 'Dukungan-Trading',
             'menu_class' => 'footer-nav',
         ) );
         ?>

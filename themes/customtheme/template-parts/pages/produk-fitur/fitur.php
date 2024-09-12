@@ -1,5 +1,6 @@
 <?php
   $feature_banner = get_dynamic_image_url('/wp-content/uploads/2024/08/team-working-together-project-scaled.jpg');
+  $image = get_dynamic_image_url('/wp-content/uploads/2024/09/WIJE9853ed-scaled.jpg');
 ?>
 
 <div id="feature">
@@ -33,7 +34,7 @@
 
     <div class="support-office--container">
       <div class="image-section">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="support-office" />
+        <img src="<?php echo $image; ?>" alt="support-office" />
       </div>
 
       <div class="text-section">

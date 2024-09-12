@@ -672,7 +672,7 @@ nav {
 
 .navbar-logo {
   display: block;
-  width: 153px;
+  width: 110px;
   height: auto;
 
   overflow: hidden;
@@ -687,24 +687,26 @@ nav {
 .btn-menu-dropdown {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 5px;
 
   border: 1px solid var(--secondary-grey);
   border-radius: 22px;
 
-  padding: 5px 10px;
+  padding: 5px 7px;
   background-color: white;
 
   cursor: pointer;
 
+  ._ {}
+
   svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: var(--primary-color);
   }
   
   span {
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: 600;
   }
 }
@@ -840,6 +842,7 @@ nav {
   /* padding: 5rem 0 10rem; */
   padding: 5rem 0 2rem;
   width: 100%;
+  height: 120px;
 }
 
 .hero--container {
@@ -848,7 +851,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .hero--content {
@@ -856,12 +859,14 @@ nav {
 }
 
 .hero-title {
-  font-size: 3em;
+  font-size: 2.1em;
   /* color: var(--primary-dark); */
   color: var(--secondary-color);
   margin: 0 0 0;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 2.8rem;
+  
+  max-width: 80%;
 
   .highlight {
     /* background-color: var(--primary-dark); */
@@ -876,8 +881,8 @@ nav {
 
 .hero-paragraph {
   color: var(--secondary-color);
-  margin: 1rem 0 0;
-  font-size: 1em;
+  margin: 0.2rem 0 0;
+  font-size: 0.9em;
 }
 
 .hero-banner-container {
@@ -903,7 +908,7 @@ nav {
 
 .companies--container {
   position: relative;
-  padding: 12rem 0;
+  padding: 11rem 0 2rem;
 
   .divider {
     width: 100%;
@@ -916,7 +921,7 @@ nav {
 .card-trading--container {
   width: 100%;
   position: absolute;
-  top: -70px;
+  top: -10px;
 
   padding: 1rem 0;
   border-radius: 12px;
@@ -938,9 +943,15 @@ nav {
 
   flex: 1;
 
+  ._ {}
+
   h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0;
+  }
+
+  span {
+    font-size: 0.9em;
   }
   
 
@@ -1038,8 +1049,8 @@ nav {
   align-items: center;
   gap: 10px;
 
-  margin-bottom: 3rem;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 
   ._ {}
 
@@ -1110,7 +1121,7 @@ nav {
   flex-direction: column;
   text-align: center;
 
-  padding: 5rem 0;
+  padding: 2rem 0;
 
   p {
     margin: 0.5rem 0 0;
@@ -1203,7 +1214,7 @@ nav {
 
 #why-us {
   width: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .why-us--container {
@@ -1388,7 +1399,7 @@ nav {
   align-items: center;
   gap: 20px;
   padding-bottom: 1.8rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
   overflow-x: scroll;
 
@@ -1484,7 +1495,7 @@ nav {
 
 #analyze {
   width: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 /* ====== END SECTION ANALISA TEKNIKAL HOMEPAGE ===== */
@@ -1493,7 +1504,7 @@ nav {
 
 #testimoni {
   width: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 /* ====== END SECTION TESTIMONI HOMEPAGE ===== */
@@ -1505,9 +1516,10 @@ nav {
   /* background: url('http://localhost/vifx/wp-content/uploads/2024/08/WIJE9737ed-scaled.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   width: 100%;
-  min-height: 250px; /* tinggi desktop */
+  min-height: 280px; /* tinggi desktop */
 
   color: white;
   display: flex;
@@ -1523,6 +1535,8 @@ nav {
   row-gap: 2rem;
   margin-top: 2rem;
 
+  ._ {}
+
   button {
     padding: 1rem 2rem;
     border: none;
@@ -1532,10 +1546,24 @@ nav {
 
     cursor: pointer;
 
+    display: flex;
+    flex-direction: column;
+
+    ._ {}
+
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+
+    span {
+      margin: 1.2rem auto 0;
+      background-color: var(--light-blue-custom);
+      padding: 0.4rem 0.8rem;
+      color: white;
+      font-size: 0.9em;
+      border-radius: 9999px;
     }
   }
 }
@@ -1896,7 +1924,7 @@ nav {
   }
 
 
-  button {
+  a > button {
     margin: 2rem 0;
     padding: 0.7rem 1.5rem;
     background-color: var(--light-blue-custom);
@@ -1905,16 +1933,10 @@ nav {
     border-radius: 6px;
     cursor: pointer;
 
-    ._ {}
+    color: white;
 
-    a {
-      color: white;
-
-      font-size: 0.9em;
-      font-weight: 400;
-
-      text-decoration: none;
-    }
+    font-size: 0.9em;
+    font-weight: 400;
   }
 }
 
@@ -2261,7 +2283,7 @@ a {
 }
 
 .page-platform--subtitle {
-
+  font-size: 1em;
 }
 
 .page-platform--list-content {
@@ -2411,7 +2433,7 @@ a {
 
 /* ===== START PAGE CONTACT ===== */
 #contact-us {
-  padding: 0 0 10rem;
+  padding: 0 0 3rem;
 }
 
 .contact--container {
@@ -2447,28 +2469,81 @@ a {
 
   text-align: start;
 
-  margin-top: 5rem;
+  margin-top: 2rem;
 
   .half-section {
     width: 100%;
   }
 }
 
-
 .contact-content {
   display: flex;
   flex-direction: column;
   gap: 5px;
 
-  margin-top: 2rem;
+  ._ {}
+
+  &.item-list {
+    
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+  }
+}
+
+.contact-title {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+
+  ._ {}
+
+  .icon {
+    width: 25px;
+    height: 25px;
+
+    ._ {}
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.contact-address {
+  margin: 2rem 0;
+  ._ {}
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  span {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+
+    ._ {}
+
+    &.bold {
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+  }
 }
 
 .contact-list--container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
-  row-gap: 0.5rem;
-  column-gap: 3rem;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+  
+  margin-top: 2rem;
 }
 
 .form--container {
@@ -3240,9 +3315,16 @@ a {
   justify-content: center;
 }
 
+
 @media only screen and (min-width: 380px) {
+  .companies--container {
+    padding: 13rem 0 2rem;
+  }
+
   .cta-demo--container {
     margin-top: 0;
+
+    ._ {}
 
     button {
       font-size: 1em;
@@ -3251,6 +3333,20 @@ a {
 }
 
 @media only screen and (min-width: 450px) {
+
+  .hero--container {
+    margin-top: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 2.7em;
+    line-height: 2.8rem;
+  }
+
+  .hero-paragraph {
+    margin-top: 0.5rem;
+  }
+
   .product-banner {
     padding-top: 8rem;
   }
@@ -3265,8 +3361,12 @@ a {
 }
 
 @media only screen and (min-width: 530px) {
-  .hero-title {
-    font-size: 3.9em;
+  #hero {
+    padding: 5rem 0;
+  }
+
+  .hero--container {
+    margin-top: 2rem;
   }
 
   .product-banner {
@@ -3274,7 +3374,22 @@ a {
   }
 }
 
-@media only screen and (min-width: 590px) {
+@media only screen and (min-width: 535px) {
+  .companies--container {
+    padding: 7rem 0 2rem;
+  }
+
+  .card-trading--container {
+    top: -30px;
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  .hero-title {
+    font-size: 3em;
+    line-height: 3.4rem;
+  }
+
   .button-action {
     font-size: 1em;
   
@@ -3299,13 +3414,14 @@ a {
 
   .cta-demo--container {
 
-    a {
+    ._ {}
+    /* a {
       width: 40%;
-    }
+    } */
 
     a > button {
-      font-size: 1.1em;
-      padding: 1.5rem 2rem;
+      font-size: 1em;
+      padding: 1rem 1.5rem;
       width: 100%;
     }
   }
@@ -3332,6 +3448,8 @@ a {
     font-size: 5em;
     margin-top: 4.5rem;
     line-height: 5.5rem;
+    
+    max-width: unset;
   }
 
   .hero-paragraph {
@@ -3340,6 +3458,8 @@ a {
   }
 
   .card-trading {
+    ._ {}
+
     h3 {
       font-size: 1.8em;
       margin: 0;
@@ -3347,7 +3467,7 @@ a {
   }
 
   .companies--container {
-    padding: 15rem 0 10rem;
+    padding: 10rem 0 2rem;
   }
 
   .companies-content-text--container {
@@ -3385,7 +3505,7 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 1.5rem;
     row-gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 1.5rem;
   }
 
   /* ====== section 4 (GLOBAL MARKET) ====== */
@@ -3412,7 +3532,6 @@ a {
 
   #why-us {
     width: 100%;
-    padding: 4rem 0;
   }
 
   .why-us--container {
@@ -3471,6 +3590,10 @@ a {
     }
   }
 
+  .about-us-hero {
+    min-height: 638px; /* tinggi desktop */
+  }
+
   /* START PAGE PRODUK */
   .product-banner {
     padding-top: 13rem;
@@ -3492,16 +3615,22 @@ a {
     /* display: flex;
     flex-direction: row; */
     gap: 0;
+    margin-top: 2rem;
   }
 
   .hero-title {
     font-size: 4.9em;
-    margin-top: 5.5rem;
+    margin-top: 3.2rem;
     line-height: 5.5rem;
   }
 
+  .hero-paragraph {
+    font-size: 1.3em;
+    margin-top: 1rem;
+  }
+
   .companies--container {
-    padding: 10rem 0;
+    padding: 7.5rem 0 2rem;
   }
 
   .companies-content-text--paragraph p {
@@ -3534,13 +3663,15 @@ a {
 
   .cta-demo--container {
 
-    a {
-      width: 20%;
-    }
+    ._ {}
+
+    /* a {
+      width: 30%;
+    } */
 
     a > button {
       font-size: 1em;
-      padding: 1rem 0;
+      padding: 1rem 2rem;
       width: 100%;
     }
   }
@@ -3685,12 +3816,12 @@ a {
   }
 
   .footer-paragraph--container {
-    width: 75%;
+    width: 100%;
     padding: 0 2rem;
   }
 
   .about-us-hero {
-    min-height: 638px; /* tinggi desktop */
+    min-height: 728px; /* tinggi desktop */
   }
 
   /* ===== START PAGE PRODUK ===== */
@@ -3748,7 +3879,8 @@ a {
   /* ===== START PAGE FITUR ===== */
   .feature-banner {
     width: 100%;
-    min-height: 600px;
+    min-height: 250px;
+    background-position: top;
   
     padding-top: 20rem;
   }
@@ -3942,6 +4074,9 @@ a {
   }
   /* ===== END PAGE CONTACT ===== */
 
+  .contact-list--container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 
   /* ======= START SINGLE CONTENT STYLE ========= */
 
@@ -4045,8 +4180,10 @@ a {
       flex-direction: column;
       gap: 10px;
 
-      padding-left: 2rem;
-      max-width: 45%;
+      margin: 0 auto;
+
+      /* padding-left: 2rem; */
+      max-width: 85%;
     }
 
     .page-title {
@@ -4077,6 +4214,12 @@ a {
 
     .content-points--container {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+
+      background-color: white;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     }
 
     .point-item {
@@ -4217,12 +4360,13 @@ a {
   /* ====== section 2 (COMPANIES) ====== */
 
   .card-trading--container {
+    top: -80px;
     padding: 1rem 0.5rem;
     gap: 2rem;
   }
 
   .companies--container {
-    padding: 8rem 0;
+    padding: 4rem 0 2rem;
   }
 
   .companies-content-text--container {
@@ -4363,9 +4507,9 @@ a {
 
   .product-banner {
     width: 100%;
-    min-height: 400px;
+    min-height: 100px;
   
-    padding-top: 20rem;
+    padding-top: 30rem;
   }
 
   .product-content--container {
@@ -4415,6 +4559,7 @@ a {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     /* gap: 1.5rem; */
   }
+  
 
   /* ======= START SINGLE CONTENT STYLE ========= */
 
@@ -4590,6 +4735,29 @@ a {
   /* ======= END SINGLE CONTENT STYLE ========= */
 }
 
+@media only screen and (min-width: 1236px) {
+
+  #hero {
+    height: 250px;
+  }
+
+  .hero-title {
+    font-size: 5em;
+    line-height: 6rem;
+    margin-top: 9rem;
+    max-width: 90%;
+  }
+
+  .hero-paragraph {
+    font-size: 1.5em;
+    margin-top: 2rem;
+  }
+
+  .about-us-hero {
+    min-height: 928px; /* tinggi desktop */
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   :root {
     --max-width: 90%;
@@ -4624,6 +4792,10 @@ a {
     font-size: 0.9em;
   }
 
+  .product-banner {
+    padding-top: 40rem;
+  }
+
     /* ======= START SINGLE CONTENT STYLE ========= */
 
     article {
@@ -4644,6 +4816,10 @@ a {
     font-size: 1.1em;
   }
 
+  #hero {
+    height: 550px;
+  }
+
   .button-action {
     font-weight: 600;
     font-size: 1em;
@@ -4662,6 +4838,10 @@ a {
   #about-us {
     padding: 0 0 16rem;
     /* position: relative; */
+  }
+
+  .about-us-hero {
+    min-height: 1028px; /* tinggi desktop */
   }
 
   .about-us--container {
@@ -4793,6 +4973,13 @@ a {
 
   /* END PAGE ABOUT US */
 
+  .product-title {
+    font-size: 5.5em;
+  }
+
+  .product-paragraph {
+    font-size: 1.8em;
+  }
 
   #platform {
     padding: 6rem 0 10rem;
@@ -4802,5 +4989,57 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+
+@media only screen and (min-width: 1574px) {
+  .product-banner {
+    padding-top: 50rem;
+  }
+
+  .page-platform--subtitle {
+    font-size: 1.2em;
+  }
+  
+  .page-platform--list-content {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .hero-title {
+    font-size: 6.5em;
+    line-height: 8rem;
+    margin-top: 9rem;
+    max-width: unset;
+  }
+
+  .hero-paragraph {
+    font-size: 2em;
+    margin-top: 2.5rem;
+  }
+
+  .about-us-hero {
+    min-height: 1280px; /* tinggi desktop */
+  }
+}
+
+
+@media only screen and (min-width: 1856px) {
+  .about-us-hero {
+    min-height: 1364px; /* tinggi desktop */
+  }
+
+  .product-banner {
+    padding-top: 60rem;
+  }
+
+  .page-platform--subtitle {
+    font-size: 1.6em;
+  }
+  
+  .page-platform--list-content {
+    font-size: 1.6em;
   }
 }
