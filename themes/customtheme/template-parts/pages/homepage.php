@@ -68,7 +68,7 @@
         <a href="https://cabinet.vifx.co.id/cabinet/login">
           <button>BUKA AKUN LIVE</button>
         </a>
-        <p>Belum memiliki pengalaman trading? <a href="https://cabinet.vifx.co.id/cabinet/login" class="text-light-blue">Buat akun demo sekarang</a></p>
+        <p>Belum memiliki pengalaman trading? <a href="https://cabinet.vifx.co.id/cabinet/register" class="text-light-blue">Buat akun demo sekarang</a></p>
       </div>
 
       <div class='companies-content'>

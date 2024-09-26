@@ -85,7 +85,12 @@
       </div>
   </section>
 
-  <div class='container about-us--container mt -xl'>
+  <div class="management">
+    <h1 class='content-title text-center mb-2 mt -xl'>Management</h1>
+    <?php echo do_shortcode('[metaslider id="450"]') ?>
+  </div>
+
+  <div class='container about-us--container mt -xl'>  
     <div class='vision-mission--container'>
       <h3 class='content-title center'>Keunggulan Kami</h3>
 
